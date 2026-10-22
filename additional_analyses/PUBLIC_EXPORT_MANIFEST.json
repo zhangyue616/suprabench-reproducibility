@@ -1,0 +1,3947 @@
+{
+  "schema": "suprabench-public-additional-export-v1",
+  "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+  "public_layout": {
+    "repository_root": ".",
+    "companion_root": "additional_analyses",
+    "original_run_root": "additional_analyses/original_run"
+  },
+  "source_freeze_identity": {
+    "bytes": 26709,
+    "sha256": "1cbf6bbb5d3c04d29f878658ce5af6681a1ea7d38aeb33b64cf05f8dac9718c5"
+  },
+  "source_frozen_executables_and_contract": {
+    "analysis_contract.json": {
+      "kind": "contract",
+      "bytes": 11835,
+      "sha256": "e588496606a559cd170b65bb67684b74e0b92cb6000a3f34d0457b4b036698c1"
+    },
+    "scripts/accept_stage_a.py": {
+      "kind": "script",
+      "bytes": 6355,
+      "sha256": "131817e2b218741c41b4d8025dc06e24f11f2ccc792234e100ac203e973f5726"
+    },
+    "scripts/build_e1_masks.py": {
+      "kind": "script",
+      "bytes": 28549,
+      "sha256": "57a78e43b51cedd158b0057638cda4b87767c367a9843d97ba39b0d1cbea0e7c"
+    },
+    "scripts/e1_parent_purge_runner.py": {
+      "kind": "script",
+      "bytes": 39442,
+      "sha256": "d662218da8bc841ff402ce2371caae32f5671b3912608eea2f27ef1b377e667c"
+    },
+    "scripts/e2_rank_diagnostic.py": {
+      "kind": "script",
+      "bytes": 31956,
+      "sha256": "fd0f32847b86f90a2538e47b601707f03a3687333c9e0a45959c494ec52e2600"
+    },
+    "scripts/freeze_stage_a.py": {
+      "kind": "script",
+      "bytes": 15766,
+      "sha256": "a1549f03fdaff1209860abbfa8f559004da6f631cbe2c1a8d71446e65af23c6e"
+    },
+    "scripts/project_identity_inputs.py": {
+      "kind": "script",
+      "bytes": 5636,
+      "sha256": "ac332c857a3174cda89642e057382869c6aea73114dc35852e1eaa641f994d09"
+    },
+    "scripts/project_uncertain_group_links.py": {
+      "kind": "script",
+      "bytes": 2032,
+      "sha256": "a7439627946f9a3d54d5268bc53db152ea87fa2ca1543f88e15170a4bbc62061"
+    },
+    "scripts/project_uncertain_group_links_v2.py": {
+      "kind": "script",
+      "bytes": 3072,
+      "sha256": "0ecdba31c0db5468481ef1f3d69f67a3c47d76337e50af9916f5564f2fcab912"
+    },
+    "scripts/staged_io.py": {
+      "kind": "script",
+      "bytes": 3401,
+      "sha256": "853e9c461586e67bdb0020eb31078de6572d0e211b40098435e203ebf240df92"
+    }
+  },
+  "omitted_frozen_members": [
+    {
+      "archive_member": "original_run/acceptance/e1_parent_purge_runner_selftest.json",
+      "kind": "support",
+      "source_identity": {
+        "bytes": 4130,
+        "sha256": "64867fa6fadab844d4e92b945fa4204f7fb0eeca0caed68766fca3391c3974ad"
+      }
+    },
+    {
+      "archive_member": "original_run/acceptance/e2_rank_diagnostic_selftest.json",
+      "kind": "support",
+      "source_identity": {
+        "bytes": 3672,
+        "sha256": "64015839e5482f4e0ecd33888ed0381f7df624f5cfbc9b523a2d7de352d80569"
+      }
+    },
+    {
+      "archive_member": "original_run/acceptance/stage_a_acceptance.json",
+      "kind": "support",
+      "source_identity": {
+        "bytes": 12090,
+        "sha256": "6b71d9fda947f1890d21d11fe0f2e47884bb34ddf75465191c1007eb45d1df96"
+      }
+    },
+    {
+      "archive_member": "original_run/inputs/projection_receipt.json",
+      "kind": "support",
+      "source_identity": {
+        "bytes": 6473,
+        "sha256": "5603613145d54e07f60168710870995a4a6ca816527a61fae8d9b2f7845fedd1"
+      }
+    },
+    {
+      "archive_member": "original_run/inputs/uncertain_links_receipt.json",
+      "kind": "support",
+      "source_identity": {
+        "bytes": 775,
+        "sha256": "9fa67fc2617f19e938aa4a82cdddc776e9e672ecca16d24ed8ab21e1e82e0d16"
+      }
+    },
+    {
+      "archive_member": "original_run/inputs/uncertain_links_receipt_v2.json",
+      "kind": "support",
+      "source_identity": {
+        "bytes": 1907,
+        "sha256": "1984063d12c4f67c6e320caf4ff7084eeb7e1323c43fe9c25d37fa5c8f116402"
+      }
+    },
+    {
+      "archive_member": "original_run/README.md",
+      "kind": "support",
+      "source_identity": {
+        "bytes": 2786,
+        "sha256": "d3a5064a9759219594e16e2a14961ae614c9d005a691fca0e584c0c97f1c059f"
+      }
+    }
+  ],
+  "unchanged_scientific_source_bindings": {
+    "canonical_features": {
+      "bytes": 30519868,
+      "sha256": "ffe6d344116e6a4ce36c0e90709666848f2319acd516c6fe2a54da47612d5310",
+      "scope": "snapshot",
+      "relative_path": "data/canonical_cpu/features/tabular_features.npz",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/canonical_cpu/features/tabular_features.npz"
+    },
+    "canonical_baseline_predictions": {
+      "bytes": 18462730,
+      "sha256": "5c5e72dc4b59219fb376c3c20b50534e3cbccb63d0c8603832f2d1baba691009",
+      "scope": "snapshot",
+      "relative_path": "results/canonical_cpu/run_a/predictions_cpu.csv",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/predictions_cpu.csv"
+    },
+    "canonical_baseline_metrics": {
+      "bytes": 44151,
+      "sha256": "54cd2d409b930d4cb40bca83fa98e02fb1ed24c1b9225ea1679cb1d9a2e8b82b",
+      "scope": "snapshot",
+      "relative_path": "results/canonical_cpu/run_a/metrics_cpu.tsv",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/metrics_cpu.tsv"
+    },
+    "family_membership": {
+      "bytes": 197140,
+      "sha256": "12c99d8df84e238c603d22b68536ba88e30a00f1f05d0dda4f2de24c51040e02",
+      "scope": "snapshot",
+      "relative_path": "data/folds/folds_family_cold.csv",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/folds/folds_family_cold.csv"
+    },
+    "family_predictions": {
+      "bytes": 2527320,
+      "sha256": "f982b2cbb9aacf3bffc82ed844d2e1e34f36a5549e8bc834f5de94bb86b66b63",
+      "scope": "snapshot",
+      "relative_path": "data/released_predictions/predictions_family_cold.csv",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/released_predictions/predictions_family_cold.csv"
+    },
+    "e1_train_masks": {
+      "bytes": 60891571,
+      "sha256": "f791389fcdb03ddc116a72467bf5f3cc322dc819ff3458cacc2c1ca5f44b4256",
+      "scope": "original_run",
+      "relative_path": "masks/train_masks.csv"
+    },
+    "e1_block_map": {
+      "bytes": 335,
+      "sha256": "cc1e6d2f1290512103a01bf23275b32fd5dcdf274d3f8d67247cc93b397041e1",
+      "scope": "original_run",
+      "relative_path": "masks/block_map.csv"
+    },
+    "e1_block_arm_support": {
+      "bytes": 9822,
+      "sha256": "4af17619c34b288b5ed9127756697f69aa774233fa7c20dd4967b8c333057c9f",
+      "scope": "original_run",
+      "relative_path": "masks/block_arm_support.csv"
+    }
+  },
+  "changed_members": [
+    {
+      "public_path": "additional_analyses/input_sources/SOURCE_BINDINGS.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "input_sources/SOURCE_BINDINGS.json",
+      "source_identity": {
+        "bytes": 3083,
+        "sha256": "756c19da7016d513f0e63051e4cf7b83d694b18fd318a5132e7ed218b8b559fa"
+      },
+      "public_identity": {
+        "bytes": 3078,
+        "sha256": "7f81af97e445d159228babf4f0e088f20f80713a2a8fedcee653c473afea047d"
+      },
+      "changes": [
+        {
+          "field": "/schema",
+          "change_type": "label wording",
+          "public_value": "e1e2-portable-path-map-v1"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/input_sources/UPSTREAM_FILE_ASSIGNMENTS.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "input_sources/UPSTREAM_FILE_ASSIGNMENTS.json",
+      "source_identity": {
+        "bytes": 6230,
+        "sha256": "d84487ce8a80b70ee9e11be4d8414803c2ef5382195884d1d3231c7b26d4d8c0"
+      },
+      "public_identity": {
+        "bytes": 6300,
+        "sha256": "ae88004196dcafe1049cc3c9eba1a448f2ae738a17f8f2e8eec8d5e9aff19c7b"
+      },
+      "changes": [
+        {
+          "field": "/companion_new_file_license",
+          "change_type": "label wording",
+          "public_value": "not separately specified in COMPUTATIONAL_SUPPLEMENT.zip; no new blanket reuse grant there; for this release see the repository-root FILE_LICENSES.tsv"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/analysis_contract.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/analysis_contract.json",
+      "source_identity": {
+        "bytes": 11835,
+        "sha256": "e588496606a559cd170b65bb67684b74e0b92cb6000a3f34d0457b4b036698c1"
+      },
+      "public_identity": {
+        "bytes": 11272,
+        "sha256": "dbf5ad818af1439a7eebdec22d29d14f526f42e1cf36deb697005c7dd4e081d5"
+      },
+      "changes": [
+        {
+          "field": "/experiment_root",
+          "change_type": "location metadata",
+          "public_value": "."
+        },
+        {
+          "field": "/decision_path",
+          "change_type": "location metadata",
+          "public_value": "not_redistributed:scientific-decision-record"
+        },
+        {
+          "field": "/scientific_snapshot/zip",
+          "change_type": "location metadata",
+          "public_value": "suprabench-cold-split-audit_81b1d092b4d2bdd4a4f293f340e7d369395ac053.zip"
+        },
+        {
+          "field": "/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/sources/family_membership/path",
+          "change_type": "location metadata",
+          "public_value": "data/folds/folds_family_cold.csv"
+        },
+        {
+          "field": "/sources/family_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "data/released_predictions/predictions_family_cold.csv"
+        },
+        {
+          "field": "/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "masks/train_masks.csv"
+        },
+        {
+          "field": "/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "masks/block_map.csv"
+        },
+        {
+          "field": "/sources/e1_block_arm_support/path",
+          "change_type": "location metadata",
+          "public_value": "masks/block_arm_support.csv"
+        },
+        {
+          "field": "/identity_sources_receipt",
+          "change_type": "location metadata",
+          "public_value": "not_redistributed:inputs/projection_receipt.json"
+        },
+        {
+          "field": "/canonical_formula_sources/run_external_fold_models.py/path",
+          "change_type": "location metadata",
+          "public_value": "historical-source-not-redistributed/run_external_fold_models.py"
+        },
+        {
+          "field": "/canonical_formula_sources/common.py/path",
+          "change_type": "location metadata",
+          "public_value": "historical-source-not-redistributed/common.py"
+        },
+        {
+          "field": "/execution/interpreter",
+          "change_type": "location metadata",
+          "public_value": "python"
+        },
+        {
+          "field": "/public_path_binding",
+          "change_type": "public path semantics",
+          "public_value": {
+            "schema": "suprabench-public-paths-v1",
+            "experiment_root_base": "original_run",
+            "companion_root_from_original_run": "..",
+            "repository_root_from_original_run": "../..",
+            "source_location_authority": "../input_sources/SOURCE_BINDINGS.json: scope + relative_path",
+            "source_path_semantics": "path is relative to its declared scope root; the adapter resolves it at runtime",
+            "historical_static_sources": "not redistributed; never imported by the E1/E2 runners"
+          }
+        },
+        {
+          "field": "/execution/restart_policy",
+          "change_type": "label wording",
+          "public_value": "no automatic resume/refit; retain failed evidence"
+        },
+        {
+          "field": "/prohibitions/4",
+          "change_type": "label wording",
+          "public_value": "no edits to the fixed snapshot or historical files"
+        },
+        {
+          "field": "/prohibitions/5",
+          "change_type": "label wording",
+          "public_value": "no dependency installation"
+        },
+        {
+          "field": "/schema_version",
+          "change_type": "label wording",
+          "public_value": "e1e2-analysis-contract-v1"
+        },
+        {
+          "field": "/stage",
+          "change_type": "label wording",
+          "public_value": "A_FROZEN_BEFORE_STAGE_B"
+        },
+        {
+          "field": "/execution",
+          "change_type": "label omitted from public file (removed or renamed)",
+          "public_value": "1 label key removed or renamed"
+        },
+        {
+          "field": "/execution/separate_stage_b_run_required",
+          "change_type": "label wording (renamed key)",
+          "public_value": true
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/masks/identity_coverage.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/masks/identity_coverage.json",
+      "source_identity": {
+        "bytes": 5710,
+        "sha256": "43aac58e61b0c34aed518dd9f5720482b670959d0491217e4e7c01d56623d1a4"
+      },
+      "public_identity": {
+        "bytes": 5122,
+        "sha256": "30ea96a5d80f94d467a23b7e440ef4c1ce4bd7bc3a8bff294b533601152e5948"
+      },
+      "changes": [
+        {
+          "field": "/boundary/opened_data_inputs/0",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/inputs/identity/canonical_membership.csv"
+        },
+        {
+          "field": "/boundary/opened_data_inputs/1",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/inputs/identity/parent_appearance_keys.csv"
+        },
+        {
+          "field": "/boundary/opened_data_inputs/2",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/inputs/identity/canonical_aliases.csv"
+        },
+        {
+          "field": "/boundary/opened_data_inputs/3",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/inputs/identity/parent_mapping.csv"
+        },
+        {
+          "field": "/boundary/opened_data_inputs/4",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/inputs/identity/parent_decisions.csv"
+        },
+        {
+          "field": "/boundary/opened_data_inputs/5",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/inputs/identity/uncertain_group_links_v2.csv"
+        },
+        {
+          "field": "/boundary/opened_metadata_input",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/inputs/frozen_recipes.json"
+        },
+        {
+          "field": "/boundary",
+          "change_type": "label omitted from public file (removed or renamed)",
+          "public_value": "1 label key removed or renamed"
+        },
+        {
+          "field": "/boundary/reported_results_opened",
+          "change_type": "label wording (renamed key)",
+          "public_value": false
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_00__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_00__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_00__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_00__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_00__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_00__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_00__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_00__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_00__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_00__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_01__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_01__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_01__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_01__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_01__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_01__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_01__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_01__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_01__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_01__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_02__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_02__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_02__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_02__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_02__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_02__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_02__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_02__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_02__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_02__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_03__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_03__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_03__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_03__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_03__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_03__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_03__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_03__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_03__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_03__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_04__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_04__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_04__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_04__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_04__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_04__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_04__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_04__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_04__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_04__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_05__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_05__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_05__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_05__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_05__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_05__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_05__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_05__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_05__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_05__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_06__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_06__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_06__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_06__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_06__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_06__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_06__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_06__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_06__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_06__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_07__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_07__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_07__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_07__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_07__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_07__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_07__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_07__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_07__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_07__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_08__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_08__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_08__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_08__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_08__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_08__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_08__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_08__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_08__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_08__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_09__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_09__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_09__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_09__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_09__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_09__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_09__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_09__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_09__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_09__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_10__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_10__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_10__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_10__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_10__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_10__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_10__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_10__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_10__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_10__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_11__baseline/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_11__baseline/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_11__parent_purge/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_11__parent_purge/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_11__random_purge_0/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_11__random_purge_0/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_11__random_purge_1/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_11__random_purge_1/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e1_run_01/block_11__random_purge_2/parameters.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e1_run_01/block_11__random_purge_2/parameters.json",
+      "source_identity": {
+        "bytes": 3427,
+        "sha256": "cf61183393c433a01a27541a151e1390f55a114188f04059a98f074af19cffef"
+      },
+      "public_identity": {
+        "bytes": 3001,
+        "sha256": "443710abbd098bb0d86a073e09ee7a50487b3ee567ea29a03301d5c61a77b5f9"
+      },
+      "changes": [
+        {
+          "field": "/provenance/sources/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/provenance/sources/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/provenance/sources/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/train_masks.csv"
+        },
+        {
+          "field": "/provenance/sources/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/masks/block_map.csv"
+        },
+        {
+          "field": "/provenance/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/provenance/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/results/e2_run_01/summary.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/results/e2_run_01/summary.json",
+      "source_identity": {
+        "bytes": 2888,
+        "sha256": "43dc3d05297ea0ebff25f3db29ce9097a13274dfbc178e6294622c1e146db6d2"
+      },
+      "public_identity": {
+        "bytes": 2634,
+        "sha256": "1351852d63efd52c0093f2f487fb9f6bca25ee3ab31ff0ce991672af69d74648"
+      },
+      "changes": [
+        {
+          "field": "/inputs/family_membership/path",
+          "change_type": "location metadata",
+          "public_value": "data/folds/folds_family_cold.csv"
+        },
+        {
+          "field": "/inputs/family_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "data/released_predictions/predictions_family_cold.csv"
+        },
+        {
+          "field": "/contract_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/analysis_contract.json"
+        },
+        {
+          "field": "/freeze_receipt_path",
+          "change_type": "location metadata",
+          "public_value": "additional_analyses/original_run/stage_a_freeze.json"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/scripts/accept_stage_a.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/scripts/accept_stage_a.py",
+      "source_identity": {
+        "bytes": 6355,
+        "sha256": "131817e2b218741c41b4d8025dc06e24f11f2ccc792234e100ac203e973f5726"
+      },
+      "public_identity": {
+        "bytes": 6287,
+        "sha256": "5f24d6e65fb9d6c892ab16f05e079bcfb105ad49970eb4cfa3d6a84d12c539c4"
+      },
+      "changes": [
+        {
+          "field": "comments, docstrings and message strings",
+          "change_type": "wording",
+          "public_value": "one comment reworded"
+        },
+        {
+          "field": "record written by the script",
+          "change_type": "constant metadata entry removed",
+          "public_value": "one constant-valued metadata key/value entry removed from the acceptance record this script writes (original_run/acceptance/stage_a_acceptance.json, not redistributed; see omitted_frozen_members); checks and computations unchanged"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/scripts/build_e1_masks.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/scripts/build_e1_masks.py",
+      "source_identity": {
+        "bytes": 28549,
+        "sha256": "57a78e43b51cedd158b0057638cda4b87767c367a9843d97ba39b0d1cbea0e7c"
+      },
+      "public_identity": {
+        "bytes": 28535,
+        "sha256": "23dff009abe6bd87c28e5228cd6c7677154d4fbce6188147d8a5a85654738e9c"
+      },
+      "changes": [
+        {
+          "field": "comments, docstrings and message strings",
+          "change_type": "wording",
+          "public_value": "comment, docstring, label and message wording only; executable logic unchanged"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/scripts/e1_parent_purge_runner.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/scripts/e1_parent_purge_runner.py",
+      "source_identity": {
+        "bytes": 39442,
+        "sha256": "d662218da8bc841ff402ce2371caae32f5671b3912608eea2f27ef1b377e667c"
+      },
+      "public_identity": {
+        "bytes": 39393,
+        "sha256": "3267c370ccb4a6bfe8ec88641425865d4c9bfc354593d571bd72386f774c3f99"
+      },
+      "changes": [
+        {
+          "field": "comments, docstrings and message strings",
+          "change_type": "wording",
+          "public_value": "comment, docstring, label and message wording only; executable logic unchanged"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/scripts/e2_rank_diagnostic.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/scripts/e2_rank_diagnostic.py",
+      "source_identity": {
+        "bytes": 31956,
+        "sha256": "fd0f32847b86f90a2538e47b601707f03a3687333c9e0a45959c494ec52e2600"
+      },
+      "public_identity": {
+        "bytes": 31950,
+        "sha256": "d16cef55496d99b9601254c3c5ee2eb5bec2bd06c8b083a40ae54703696a60d6"
+      },
+      "changes": [
+        {
+          "field": "comments, docstrings and message strings",
+          "change_type": "wording",
+          "public_value": "comment, docstring, label and message wording only; executable logic unchanged"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/scripts/freeze_stage_a.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/scripts/freeze_stage_a.py",
+      "source_identity": {
+        "bytes": 15766,
+        "sha256": "a1549f03fdaff1209860abbfa8f559004da6f631cbe2c1a8d71446e65af23c6e"
+      },
+      "public_identity": {
+        "bytes": 15746,
+        "sha256": "ab0ac3e140e512168e84068b0d690be66ebbf3c002954862a978f57d08cbddf8"
+      },
+      "changes": [
+        {
+          "field": "source",
+          "change_type": "historical constructor location/provenance constants and label wording",
+          "public_value": "location, binding and label changes; source diff not redistributed"
+        },
+        {
+          "field": "comments, docstrings and message strings",
+          "change_type": "wording; one constant entry removed",
+          "public_value": "message and label wording edited, including the embedded README template text; one constant boundary flag removed from the emitted receipt; computation unchanged"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/scripts/project_identity_inputs.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/scripts/project_identity_inputs.py",
+      "source_identity": {
+        "bytes": 5636,
+        "sha256": "ac332c857a3174cda89642e057382869c6aea73114dc35852e1eaa641f994d09"
+      },
+      "public_identity": {
+        "bytes": 5623,
+        "sha256": "634be83cfbaff5ac7b4e258c4299d2c5ad731a940167ebcc5304baf683a51fd3"
+      },
+      "changes": [
+        {
+          "field": "comments, docstrings and message strings",
+          "change_type": "wording",
+          "public_value": "comment, docstring, label and message wording only; executable logic unchanged"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/scripts/staged_io.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/scripts/staged_io.py",
+      "source_identity": {
+        "bytes": 3401,
+        "sha256": "853e9c461586e67bdb0020eb31078de6572d0e211b40098435e203ebf240df92"
+      },
+      "public_identity": {
+        "bytes": 3384,
+        "sha256": "108dd8d65952f06cd2e73cc58b23a82a5932019ef7ccadddc51ae88429b20c08"
+      },
+      "changes": [
+        {
+          "field": "comments, docstrings and message strings",
+          "change_type": "wording",
+          "public_value": "comment, docstring, label and message wording only; executable logic unchanged"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/original_run/stage_a_freeze.json",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "original_run/stage_a_freeze.json",
+      "source_identity": {
+        "bytes": 26709,
+        "sha256": "1cbf6bbb5d3c04d29f878658ce5af6681a1ea7d38aeb33b64cf05f8dac9718c5"
+      },
+      "public_identity": {
+        "bytes": 26479,
+        "sha256": "d9b54f698af1f90fc84b266e974cbd900ab5ffb9387d9358b60598aee9803bf2"
+      },
+      "changes": [
+        {
+          "field": "/source_bindings/canonical_features/path",
+          "change_type": "location metadata",
+          "public_value": "data/canonical_cpu/features/tabular_features.npz"
+        },
+        {
+          "field": "/source_bindings/canonical_baseline_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/predictions_cpu.csv"
+        },
+        {
+          "field": "/source_bindings/canonical_baseline_metrics/path",
+          "change_type": "location metadata",
+          "public_value": "results/canonical_cpu/run_a/metrics_cpu.tsv"
+        },
+        {
+          "field": "/source_bindings/family_membership/path",
+          "change_type": "location metadata",
+          "public_value": "data/folds/folds_family_cold.csv"
+        },
+        {
+          "field": "/source_bindings/family_predictions/path",
+          "change_type": "location metadata",
+          "public_value": "data/released_predictions/predictions_family_cold.csv"
+        },
+        {
+          "field": "/source_bindings/e1_train_masks/path",
+          "change_type": "location metadata",
+          "public_value": "masks/train_masks.csv"
+        },
+        {
+          "field": "/source_bindings/e1_block_map/path",
+          "change_type": "location metadata",
+          "public_value": "masks/block_map.csv"
+        },
+        {
+          "field": "/source_bindings/e1_block_arm_support/path",
+          "change_type": "location metadata",
+          "public_value": "masks/block_arm_support.csv"
+        },
+        {
+          "field": "/acceptance",
+          "change_type": "location metadata",
+          "public_value": "not_redistributed:acceptance/stage_a_acceptance.json"
+        },
+        {
+          "field": "/frozen_files/masks~1identity_coverage.json/bytes",
+          "change_type": "public byte binding",
+          "public_value": 5122
+        },
+        {
+          "field": "/frozen_files/masks~1identity_coverage.json/sha256",
+          "change_type": "public byte binding",
+          "public_value": "30ea96a5d80f94d467a23b7e440ef4c1ce4bd7bc3a8bff294b533601152e5948"
+        },
+        {
+          "field": "/frozen_files/acceptance~1e1_parent_purge_runner_selftest.json",
+          "change_type": "unselected historical support member omitted from public binding",
+          "public_value": "not redistributed; source identity in manifest"
+        },
+        {
+          "field": "/frozen_files/acceptance~1e2_rank_diagnostic_selftest.json",
+          "change_type": "unselected historical support member omitted from public binding",
+          "public_value": "not redistributed; source identity in manifest"
+        },
+        {
+          "field": "/frozen_files/acceptance~1stage_a_acceptance.json",
+          "change_type": "unselected historical support member omitted from public binding",
+          "public_value": "not redistributed; source identity in manifest"
+        },
+        {
+          "field": "/frozen_files/analysis_contract.json/bytes",
+          "change_type": "public byte binding",
+          "public_value": 11272
+        },
+        {
+          "field": "/frozen_files/analysis_contract.json/sha256",
+          "change_type": "public byte binding",
+          "public_value": "dbf5ad818af1439a7eebdec22d29d14f526f42e1cf36deb697005c7dd4e081d5"
+        },
+        {
+          "field": "/frozen_files/inputs~1projection_receipt.json",
+          "change_type": "unselected historical support member omitted from public binding",
+          "public_value": "not redistributed; source identity in manifest"
+        },
+        {
+          "field": "/frozen_files/inputs~1uncertain_links_receipt.json",
+          "change_type": "unselected historical support member omitted from public binding",
+          "public_value": "not redistributed; source identity in manifest"
+        },
+        {
+          "field": "/frozen_files/inputs~1uncertain_links_receipt_v2.json",
+          "change_type": "unselected historical support member omitted from public binding",
+          "public_value": "not redistributed; source identity in manifest"
+        },
+        {
+          "field": "/frozen_files/README.md",
+          "change_type": "unselected historical support member omitted from public binding",
+          "public_value": "not redistributed; source identity in manifest"
+        },
+        {
+          "field": "/frozen_files/scripts~1freeze_stage_a.py/bytes",
+          "change_type": "public byte binding",
+          "public_value": 15746
+        },
+        {
+          "field": "/frozen_files/scripts~1freeze_stage_a.py/sha256",
+          "change_type": "public byte binding",
+          "public_value": "ab0ac3e140e512168e84068b0d690be66ebbf3c002954862a978f57d08cbddf8"
+        },
+        {
+          "field": "/public_export",
+          "change_type": "public exported-byte binding and source identity",
+          "public_value": {
+            "schema": "suprabench-public-freeze-v1",
+            "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+            "source_member": "original_run/stage_a_freeze.json",
+            "source_identity": {
+              "bytes": 26709,
+              "sha256": "1cbf6bbb5d3c04d29f878658ce5af6681a1ea7d38aeb33b64cf05f8dac9718c5"
+            },
+            "binding_scope": "selected public contract/scripts/support, with original scientific source identities retained",
+            "source_paths": "source_bindings.path is relative to the scope declared in SOURCE_BINDINGS.json",
+            "adapter_files": {
+              "portable/staged_io_adapter.py": {
+                "bytes": 7998,
+                "sha256": "cc3ed971db998014681553f9ba4c8a00fd8fad36e96e7d8763ffcd6dd863c49a"
+              },
+              "portable/reproduce.py": {
+                "bytes": 8793,
+                "sha256": "c18c216db3e32557ea9cb42b46b0dd740a4ccdcb317c03a49d75ff72fb22e4f0"
+              },
+              "input_sources/SOURCE_BINDINGS.json": {
+                "bytes": 3078,
+                "sha256": "7f81af97e445d159228babf4f0e088f20f80713a2a8fedcee653c473afea047d"
+              },
+              "portable/rescore_e1.py": {
+                "bytes": 9149,
+                "sha256": "bc6fc6e8b195a0a4728f412fcfc4901b139566226652b3d177343391bf3a9653"
+              }
+            },
+            "historical_stage_a_rerun": false,
+            "omitted_historical_support_members": [
+              "original_run/acceptance/e1_parent_purge_runner_selftest.json",
+              "original_run/acceptance/e2_rank_diagnostic_selftest.json",
+              "original_run/acceptance/stage_a_acceptance.json",
+              "original_run/inputs/projection_receipt.json",
+              "original_run/inputs/uncertain_links_receipt.json",
+              "original_run/inputs/uncertain_links_receipt_v2.json",
+              "original_run/README.md"
+            ]
+          }
+        },
+        {
+          "field": "/frozen_files/scripts~1accept_stage_a.py/bytes",
+          "change_type": "rebound to public file identity",
+          "public_value": 6287
+        },
+        {
+          "field": "/frozen_files/scripts~1accept_stage_a.py/sha256",
+          "change_type": "rebound to public file identity",
+          "public_value": "5f24d6e65fb9d6c892ab16f05e079bcfb105ad49970eb4cfa3d6a84d12c539c4"
+        },
+        {
+          "field": "/frozen_files/scripts~1build_e1_masks.py/bytes",
+          "change_type": "rebound to public file identity",
+          "public_value": 28535
+        },
+        {
+          "field": "/frozen_files/scripts~1build_e1_masks.py/sha256",
+          "change_type": "rebound to public file identity",
+          "public_value": "23dff009abe6bd87c28e5228cd6c7677154d4fbce6188147d8a5a85654738e9c"
+        },
+        {
+          "field": "/frozen_files/scripts~1e1_parent_purge_runner.py/bytes",
+          "change_type": "rebound to public file identity",
+          "public_value": 39393
+        },
+        {
+          "field": "/frozen_files/scripts~1e1_parent_purge_runner.py/sha256",
+          "change_type": "rebound to public file identity",
+          "public_value": "3267c370ccb4a6bfe8ec88641425865d4c9bfc354593d571bd72386f774c3f99"
+        },
+        {
+          "field": "/frozen_files/scripts~1e2_rank_diagnostic.py/bytes",
+          "change_type": "rebound to public file identity",
+          "public_value": 31950
+        },
+        {
+          "field": "/frozen_files/scripts~1e2_rank_diagnostic.py/sha256",
+          "change_type": "rebound to public file identity",
+          "public_value": "d16cef55496d99b9601254c3c5ee2eb5bec2bd06c8b083a40ae54703696a60d6"
+        },
+        {
+          "field": "/frozen_files/scripts~1project_identity_inputs.py/bytes",
+          "change_type": "rebound to public file identity",
+          "public_value": 5623
+        },
+        {
+          "field": "/frozen_files/scripts~1project_identity_inputs.py/sha256",
+          "change_type": "rebound to public file identity",
+          "public_value": "634be83cfbaff5ac7b4e258c4299d2c5ad731a940167ebcc5304baf683a51fd3"
+        },
+        {
+          "field": "/frozen_files/scripts~1staged_io.py/bytes",
+          "change_type": "rebound to public file identity",
+          "public_value": 3384
+        },
+        {
+          "field": "/frozen_files/scripts~1staged_io.py/sha256",
+          "change_type": "rebound to public file identity",
+          "public_value": "108dd8d65952f06cd2e73cc58b23a82a5932019ef7ccadddc51ae88429b20c08"
+        },
+        {
+          "field": "/",
+          "change_type": "label omitted from public file (removed or renamed)",
+          "public_value": "1 label key removed or renamed"
+        },
+        {
+          "field": "/boundary",
+          "change_type": "label omitted from public file (removed or renamed)",
+          "public_value": "1 label key removed or renamed"
+        },
+        {
+          "field": "/stage_b_plan",
+          "change_type": "label wording (renamed key)",
+          "public_value": "separate Stage B: E2 then E1, frozen masks and rules unchanged"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/portable/README.md",
+      "source_archive": null,
+      "source_archive_member": null,
+      "source_identity": null,
+      "public_identity": {
+        "bytes": 5212,
+        "sha256": "ef39db97c31d9aa0046de4e1c1a124c123b7a60334f70adf73b56b7990abf85a"
+      },
+      "changes": [
+        {
+          "field": "document",
+          "change_type": "new public location and binding instructions",
+          "public_value": "public export instructions"
+        },
+        {
+          "field": "documentation text",
+          "change_type": "wording",
+          "public_value": "documentation wording only"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/portable/reproduce.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "portable/reproduce.py",
+      "source_identity": {
+        "bytes": 8277,
+        "sha256": "f6153801b4c49e92dbc641aa79468048f3352b6ccc4816e2660838fc80eb088c"
+      },
+      "public_identity": {
+        "bytes": 8793,
+        "sha256": "c18c216db3e32557ea9cb42b46b0dd740a4ccdcb317c03a49d75ff72fb22e4f0"
+      },
+      "changes": [
+        {
+          "field": "source",
+          "change_type": "snapshot root defaults to repository root",
+          "public_value": "location/binding code only; source diff not redistributed"
+        },
+        {
+          "field": "saved_rescore_entrypoint",
+          "change_type": "public saved-prediction scoring entrypoint added",
+          "public_value": "rescore-e1 uses unchanged historical scoring functions; no fitting or change to scientific inputs/settings"
+        }
+      ]
+    },
+    {
+      "public_path": "additional_analyses/portable/staged_io_adapter.py",
+      "source_archive": "COMPUTATIONAL_SUPPLEMENT.zip",
+      "source_archive_member": "portable/staged_io_adapter.py",
+      "source_identity": {
+        "bytes": 6720,
+        "sha256": "9dcdf2e1ca0bdb8bef276b3e90626362f6e4fd93098d1a307e9b5b5e927a29ea"
+      },
+      "public_identity": {
+        "bytes": 7998,
+        "sha256": "cc3ed971db998014681553f9ba4c8a00fd8fad36e96e7d8763ffcd6dd863c49a"
+      },
+      "changes": [
+        {
+          "field": "source",
+          "change_type": "relative-path contract, exported-byte verification and schema label",
+          "public_value": "location/binding code and schema-label changes; source diff not redistributed"
+        },
+        {
+          "field": "comments, docstrings and message strings",
+          "change_type": "wording",
+          "public_value": "docstring wording only; the schema label is listed in the source record above"
+        }
+      ]
+    }
+  ],
+  "invariants": {
+    "e1_and_e2_scientific_contract_equal": true,
+    "execution_settings_equal_except_declared_changes": true,
+    "eight_source_ids_bytes_sha_equal": true,
+    "scientific_runner_logic_unchanged_comment_or_message_edits_only": [
+      "original_run/scripts/e1_parent_purge_runner.py",
+      "original_run/scripts/e2_rank_diagnostic.py"
+    ],
+    "tables_arrays_masks_predictions": "copied byte-for-byte; never parsed or regenerated by this exporter",
+    "literal_target_gate": "unchanged exact-string gate in portable/reproduce.py",
+    "thread_environment": "five original variables retained; run-e1 setup precedes numerical imports"
+  },
+  "execution": {
+    "packaging_only": true,
+    "scientific_execution_performed": false,
+    "scores_computed": false,
+    "new_fits": 0,
+    "check_or_inspect_run": false
+  },
+  "current_public_additions": [
+    {
+      "public_path": "additional_analyses/portable/rescore_e1.py",
+      "public_identity": {
+        "bytes": 9149,
+        "sha256": "bc6fc6e8b195a0a4728f412fcfc4901b139566226652b3d177343391bf3a9653"
+      },
+      "purpose": "new saved-prediction rescore adapter, not a historical source member"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "Please cite this repository and the exact version used. No published-article or DOI metadata is assigned here."
+type: software
+title: "Cold-Split Evaluation of Host–Guest Affinity Prediction in SupraBench"
+authors:
+  - family-names: "Zhang"
+    given-names: "Yue"
+  - family-names: "Yu"
+    given-names: "Dong-Jun"
+  - family-names: "Zhang"
+    given-names: "Qi"
+version: "1.0.0"
+date-released: 2026-10-22
+repository-code: "https://github.com/zhangyue616/suprabench-reproducibility"

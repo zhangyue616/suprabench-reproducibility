@@ -1,0 +1,20 @@
+{
+  "family_counts": {
+    "cyclodextrin": {
+      "raw_host_identifiers": 21,
+      "released_records": 352
+    },
+    "cucurbituril": {
+      "raw_host_identifiers": 19,
+      "released_records": 733
+    },
+    "calixarene": {
+      "raw_host_identifiers": 49,
+      "released_records": 536
+    },
+    "other": {
+      "raw_host_identifiers": 88,
+      "released_records": 581
+    }
+  }
+}

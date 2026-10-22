@@ -1,0 +1,24 @@
+panel,group,category,series,value,uncertainty,count,denominator,n,unit,aggregation
+a,source,eupmc,field coverage,90.9357952161,,2167,2383,,percent,100 * count / 2383; fields normalized independently
+a,source,cb7_supplement,field coverage,9.06420478389,,216,2383,,percent,100 * count / 2383; fields normalized independently
+a,solvent,buffer,field coverage,43.4326479228,,1035,2383,,percent,100 * count / 2383; fields normalized independently
+a,solvent,water,field coverage,29.2068820814,,696,2383,,percent,100 * count / 2383; fields normalized independently
+a,solvent,complex,field coverage,20.64624423,,492,2383,,percent,100 * count / 2383; fields normalized independently
+a,solvent,D2O,field coverage,3.27318506085,,78,2383,,percent,100 * count / 2383; fields normalized independently
+a,solvent,missing,field coverage,2.89550986152,,69,2383,,percent,100 * count / 2383; fields normalized independently
+a,solvent,other,field coverage,0.545530843475,,13,2383,,percent,100 * count / 2383; fields normalized independently
+a,temperature,~25,field coverage,53.9236256819,,1285,2383,,percent,100 * count / 2383; fields normalized independently
+a,temperature,missing,field coverage,43.8522870332,,1045,2383,,percent,100 * count / 2383; fields normalized independently
+a,temperature,other,field coverage,2.22408728493,,53,2383,,percent,100 * count / 2383; fields normalized independently
+a,pH,missing,field coverage,62.1485522451,,1481,2383,,percent,100 * count / 2383; fields normalized independently
+a,pH,neutral,field coverage,31.2211498112,,744,2383,,percent,100 * count / 2383; fields normalized independently
+a,pH,acidic,field coverage,3.60889634914,,86,2383,,percent,100 * count / 2383; fields normalized independently
+a,pH,basic,field coverage,3.02140159463,,72,2383,,percent,100 * count / 2383; fields normalized independently
+b,within_solvent,buffer,Descriptor-RF,0.401,0.14,,,12,R2,equal-block mean; uncertainty is block SD
+b,within_solvent,buffer,Similarity k=5,0.07,,,,12,R2,equal-block mean; no SD stored for this displayed series
+b,within_solvent,water,Descriptor-RF,0.308,0.148,,,8,R2,equal-block mean; uncertainty is block SD
+b,within_solvent,water,Similarity k=5,0.145,,,,8,R2,equal-block mean; no SD stored for this displayed series
+b,within_solvent,complex,Descriptor-RF,0.264,0.129,,,8,R2,equal-block mean; uncertainty is block SD
+b,within_solvent,complex,Similarity k=5,-1.017,,,,8,R2,equal-block mean; no SD stored for this displayed series
+c,released_record_dispersion,Matched condition-group SD,mean groupwise sample SD,0.168,,,,75,log Ka,"unweighted mean of groupwise sample SD, ddof=1"
+c,released_record_dispersion,Cross-condition pair SD,mean groupwise sample SD,0.24,,,,47,log Ka,"unweighted mean of pairwise sample SD, ddof=1"

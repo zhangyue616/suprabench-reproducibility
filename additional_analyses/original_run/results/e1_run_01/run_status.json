@@ -1,0 +1,13 @@
+{
+  "status": "COMPLETED",
+  "completed_jobs": 60,
+  "actual_rf_fits_attempted": 300,
+  "actual_rf_fits_completed": 300,
+  "duration_seconds": 102.51600000000326,
+  "peak_memory": {
+    "status": "MEASURED",
+    "bytes": 377970688,
+    "scope": "process_lifetime_peak_working_set",
+    "method": "Windows GetProcessMemoryInfo"
+  }
+}

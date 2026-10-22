@@ -1,0 +1,51 @@
+panel,model,regime,seed,metric,value,aggregation
+a,GINE,random,0,R2,0.5460746884346008,pooled
+a,GINE,random,1,R2,0.5450212955474854,pooled
+a,GINE,random,2,R2,0.5485304594039917,pooled
+a,GINE,random,3,R2,0.5399183034896851,pooled
+a,GINE,random,4,R2,0.5447115898132324,pooled
+a,GINE,host_cold,0,R2,0.35300886631011963,pooled
+a,GINE,host_cold,1,R2,0.27842509746551514,pooled
+a,GINE,host_cold,2,R2,0.28985846042633057,pooled
+a,GINE,host_cold,3,R2,0.2991095185279846,pooled
+a,GINE,host_cold,4,R2,0.3103523254394531,pooled
+a,GINE,guest_cold,0,R2,0.5471956729888916,pooled
+a,GINE,guest_cold,1,R2,0.5182409286499023,pooled
+a,GINE,guest_cold,2,R2,0.5075300931930542,pooled
+a,GINE,guest_cold,3,R2,0.5191384553909302,pooled
+a,GINE,guest_cold,4,R2,0.5259024500846863,pooled
+a,GINE,double_cold,0,mean_R2,0.19412914415200552,equal-block mean across 12 fixed overlapping blocks
+a,GINE,double_cold,1,mean_R2,0.15870081384976706,equal-block mean across 12 fixed overlapping blocks
+a,GINE,double_cold,2,mean_R2,0.2766432861487071,equal-block mean across 12 fixed overlapping blocks
+a,GINE,double_cold,3,mean_R2,0.23230830828348795,equal-block mean across 12 fixed overlapping blocks
+a,GINE,double_cold,4,mean_R2,0.20770598948001862,equal-block mean across 12 fixed overlapping blocks
+a,AttentiveFP,random,0,R2,0.5798721313476562,pooled
+a,AttentiveFP,random,1,R2,0.5735988616943359,pooled
+a,AttentiveFP,random,2,R2,0.5991462469100952,pooled
+a,AttentiveFP,random,3,R2,0.6178805828094482,pooled
+a,AttentiveFP,random,4,R2,0.609407365322113,pooled
+a,AttentiveFP,host_cold,0,R2,0.3939560055732727,pooled
+a,AttentiveFP,host_cold,1,R2,0.3573254346847534,pooled
+a,AttentiveFP,host_cold,2,R2,0.38124704360961914,pooled
+a,AttentiveFP,host_cold,3,R2,0.43100106716156006,pooled
+a,AttentiveFP,host_cold,4,R2,-0.052082061767578125,pooled
+a,AttentiveFP,guest_cold,0,R2,0.5737367868423462,pooled
+a,AttentiveFP,guest_cold,1,R2,0.5441383719444275,pooled
+a,AttentiveFP,guest_cold,2,R2,0.5442404747009277,pooled
+a,AttentiveFP,guest_cold,3,R2,0.6154406666755676,pooled
+a,AttentiveFP,guest_cold,4,R2,0.5775995254516602,pooled
+a,AttentiveFP,double_cold,0,mean_R2,0.16921939452489218,equal-block mean across 12 fixed overlapping blocks
+a,AttentiveFP,double_cold,1,mean_R2,0.2398520807425181,equal-block mean across 12 fixed overlapping blocks
+a,AttentiveFP,double_cold,2,mean_R2,0.24165755013624826,equal-block mean across 12 fixed overlapping blocks
+a,AttentiveFP,double_cold,3,mean_R2,0.25682978332042694,equal-block mean across 12 fixed overlapping blocks
+a,AttentiveFP,double_cold,4,mean_R2,0.2889958967765172,equal-block mean across 12 fixed overlapping blocks
+b,GINE,double_cold,0,mean_margin_R2,-0.09722399086974239,equal-block mean margin across 12 fixed overlapping blocks
+b,GINE,double_cold,1,mean_margin_R2,-0.13265232117198086,equal-block mean margin across 12 fixed overlapping blocks
+b,GINE,double_cold,2,mean_margin_R2,-0.014709848873040837,equal-block mean margin across 12 fixed overlapping blocks
+b,GINE,double_cold,3,mean_margin_R2,-0.05904482673825995,equal-block mean margin across 12 fixed overlapping blocks
+b,GINE,double_cold,4,mean_margin_R2,-0.08364714554172929,equal-block mean margin across 12 fixed overlapping blocks
+b,AttentiveFP,double_cold,0,mean_margin_R2,-0.12213374049685573,equal-block mean margin across 12 fixed overlapping blocks
+b,AttentiveFP,double_cold,1,mean_margin_R2,-0.051501054279229797,equal-block mean margin across 12 fixed overlapping blocks
+b,AttentiveFP,double_cold,2,mean_margin_R2,-0.04969558488549963,equal-block mean margin across 12 fixed overlapping blocks
+b,AttentiveFP,double_cold,3,mean_margin_R2,-0.03452335170132097,equal-block mean margin across 12 fixed overlapping blocks
+b,AttentiveFP,double_cold,4,mean_margin_R2,-0.002357238245230676,equal-block mean margin across 12 fixed overlapping blocks

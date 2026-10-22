@@ -1,0 +1,152 @@
+{
+  "b": 0,
+  "block_id": "double_cold/seed_0",
+  "fold_index": 0,
+  "seed": "0",
+  "arm": "random_purge_0",
+  "metrics": {
+    "PAIR_RF": {
+      "n": 102,
+      "mae": 1.0880471510928051,
+      "mae_status": "DEFINED",
+      "guarded_r2": 0.38688474411847007,
+      "guarded_r2_status": "DEFINED",
+      "guarded_r2_undefined_reason": null,
+      "standard_r2": 0.38688474411847007,
+      "standard_r2_status": "DEFINED",
+      "standard_r2_undefined_reason": null,
+      "spearman": 0.5915009118874279,
+      "spearman_status": "DEFINED",
+      "spearman_undefined_reason": null
+    },
+    "sim_knn_k5": {
+      "n": 102,
+      "mae": 1.383397019961301,
+      "mae_status": "DEFINED",
+      "guarded_r2": -0.20366546670956343,
+      "guarded_r2_status": "DEFINED",
+      "guarded_r2_undefined_reason": null,
+      "standard_r2": -0.20366546670956343,
+      "standard_r2_status": "DEFINED",
+      "standard_r2_undefined_reason": null,
+      "spearman": 0.4081479743306661,
+      "spearman_status": "DEFINED",
+      "spearman_undefined_reason": null
+    },
+    "additive": {
+      "n": 102,
+      "mae": 1.2609595128803819,
+      "mae_status": "DEFINED",
+      "guarded_r2": 0.021628129698418874,
+      "guarded_r2_status": "DEFINED",
+      "guarded_r2_undefined_reason": null,
+      "standard_r2": 0.021628129698418874,
+      "standard_r2_status": "DEFINED",
+      "standard_r2_undefined_reason": null,
+      "spearman": 0.44662623525392586,
+      "spearman_status": "DEFINED",
+      "spearman_undefined_reason": null
+    },
+    "host_only_RF": {
+      "n": 102,
+      "mae": 1.4099317520994965,
+      "mae_status": "DEFINED",
+      "guarded_r2": 0.07826246011613136,
+      "guarded_r2_status": "DEFINED",
+      "guarded_r2_undefined_reason": null,
+      "standard_r2": 0.07826246011613136,
+      "standard_r2_status": "DEFINED",
+      "standard_r2_undefined_reason": null,
+      "spearman": 0.4325932142235183,
+      "spearman_status": "DEFINED",
+      "spearman_undefined_reason": null
+    },
+    "guest_only_RF": {
+      "n": 102,
+      "mae": 1.4049871339024855,
+      "mae_status": "DEFINED",
+      "guarded_r2": -0.06015586643419657,
+      "guarded_r2_status": "DEFINED",
+      "guarded_r2_undefined_reason": null,
+      "standard_r2": -0.06015586643419657,
+      "standard_r2_status": "DEFINED",
+      "standard_r2_undefined_reason": null,
+      "spearman": 0.2538637714137188,
+      "spearman_status": "DEFINED",
+      "spearman_undefined_reason": null
+    },
+    "cond_only_RF": {
+      "n": 102,
+      "mae": 1.457827897601665,
+      "mae_status": "DEFINED",
+      "guarded_r2": -0.005298919377972888,
+      "guarded_r2_status": "DEFINED",
+      "guarded_r2_undefined_reason": null,
+      "standard_r2": -0.005298919377972888,
+      "standard_r2_status": "DEFINED",
+      "standard_r2_undefined_reason": null,
+      "spearman": 0.002421708546850886,
+      "spearman_status": "DEFINED",
+      "spearman_undefined_reason": null
+    },
+    "source_only_RF": {
+      "n": 102,
+      "mae": 1.401805533840789,
+      "mae_status": "DEFINED",
+      "guarded_r2": null,
+      "guarded_r2_status": "UNKNOWN",
+      "guarded_r2_undefined_reason": "CONSTANT_PREDICTION_GUARD",
+      "standard_r2": -0.007470282917556137,
+      "standard_r2_status": "DEFINED",
+      "standard_r2_undefined_reason": null,
+      "spearman": null,
+      "spearman_status": "UNKNOWN",
+      "spearman_undefined_reason": "NONFINITE_SPEARMAN"
+    }
+  },
+  "guarded_margin": {
+    "margin": 0.3086222840023387,
+    "status": "DEFINED",
+    "best_null": "host_only_RF",
+    "best_null_r2": 0.07826246011613136,
+    "eligible_nulls": [
+      "sim_knn_k5",
+      "additive",
+      "host_only_RF",
+      "guest_only_RF",
+      "cond_only_RF"
+    ],
+    "ineligible_nulls": {
+      "source_only_RF": "CONSTANT_PREDICTION_GUARD"
+    },
+    "undefined_reason": null
+  },
+  "standard_margin": {
+    "margin": 0.3086222840023387,
+    "status": "DEFINED",
+    "best_null": "host_only_RF",
+    "best_null_r2": 0.07826246011613136,
+    "eligible_nulls": [
+      "sim_knn_k5",
+      "additive",
+      "host_only_RF",
+      "guest_only_RF",
+      "cond_only_RF",
+      "source_only_RF"
+    ],
+    "ineligible_nulls": {},
+    "undefined_reason": null
+  },
+  "n_train": 1419,
+  "n_test": 102,
+  "n_deleted_train": 29,
+  "duration_seconds": 1.687000000005355,
+  "peak_memory": {
+    "status": "MEASURED",
+    "bytes": 377143296,
+    "scope": "process_lifetime_peak_working_set",
+    "method": "Windows GetProcessMemoryInfo"
+  },
+  "actual_rf_fits_attempted": 5,
+  "actual_rf_fits_completed": 5
+}

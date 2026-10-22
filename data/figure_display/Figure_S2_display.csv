@@ -1,0 +1,29 @@
+panel,section,category,series,marker,support,value,sd,n,unit,aggregation
+a,pooled,random,k=1,s,,0.481,,,R2,pooled
+a,pooled,host-cold,k=1,s,,0.095,,,R2,pooled
+a,pooled,guest-cold,k=1,s,,0.362,,,R2,pooled
+a,pooled,random,k=3,o,,0.582,,,R2,pooled
+a,pooled,host-cold,k=3,o,,0.239,,,R2,pooled
+a,pooled,guest-cold,k=3,o,,0.505,,,R2,pooled
+a,pooled,random,k=5,^,,0.587,,,R2,pooled
+a,pooled,host-cold,k=5,^,,0.218,,,R2,pooled
+a,pooled,guest-cold,k=5,^,,0.538,,,R2,pooled
+a,equal_block_double_cold,double-cold,k=1,s,,-0.123,0.372,12,R2,equal-block mean; SD across 12 fixed blocks
+a,equal_block_double_cold,double-cold,k=3,o,,0.134,0.331,12,R2,equal-block mean; SD across 12 fixed blocks
+a,equal_block_double_cold,double-cold,k=5,^,,0.186,0.305,12,R2,equal-block mean; SD across 12 fixed blocks
+b,family_slope,cucurbituril,Descriptor-RF,o,supported,1.664,,733,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,cucurbituril,AttentiveFP,*,supported,1.271,,733,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,other,Descriptor-RF,o,supported,0.605,,581,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,other,AttentiveFP,*,supported,0.547,,581,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,calixarene,Descriptor-RF,o,supported,0.86,,536,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,calixarene,AttentiveFP,*,supported,0.7,,536,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,cyclodextrin,Descriptor-RF,o,supported,0.588,,352,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,cyclodextrin,AttentiveFP,*,supported,0.259,,352,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,cavitand,Descriptor-RF,o,NO_CONCLUSION_small,-0.014,,79,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,cavitand,AttentiveFP,*,NO_CONCLUSION_small,0.869,,79,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,pillararene,Descriptor-RF,o,NO_CONCLUSION_small,-0.094,,57,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,pillararene,AttentiveFP,*,NO_CONCLUSION_small,0.207,,57,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,cyclophane,Descriptor-RF,o,NO_CONCLUSION_small,1.307,,28,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,cyclophane,AttentiveFP,*,NO_CONCLUSION_small,0.751,,28,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,crown ether,Descriptor-RF,o,NO_CONCLUSION_small,0.484,,17,slope,"linregress(y_pred, y_true).slope with intercept"
+b,family_slope,crown ether,AttentiveFP,*,NO_CONCLUSION_small,0.636,,17,slope,"linregress(y_pred, y_true).slope with intercept"

@@ -1,0 +1,31 @@
+# Data sources and transformations
+
+## Upstream resource
+
+The source is the [SupraBench Binding-Affinity-Prediction resource](https://github.com/Tianyi-Billy-Ma/SupraBench). Its code and curated benchmark data are distributed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). SupraBench identifies [SupraBank](https://suprabank.org/) as a source of binding records. These attributions apply to the records and their derived scientific artifacts in this repository; see [THIRD_PARTY.md](../THIRD_PARTY.md).
+
+The original archive is available from the [SupraBench/Binding-Affinity dataset](https://huggingface.co/datasets/SupraBench/Binding-Affinity), as `data/records.parquet`. A further upstream entry is [SupraBench/bap](https://huggingface.co/datasets/SupraBench/bap). The archive used for this analysis has:
+
+| Property | Recorded value |
+|---|---|
+| File | `records.parquet` |
+| Bytes | 96,671,103 |
+| SHA-256 | `a4ba8a95d169ad852cda058243e06d321e7dc8e9cc054c8b029fe64c7d4a7c38` |
+
+This large archive is not duplicated here. Download it from the upstream dataset if raw-record reconstruction is needed, then compare its SHA-256 with the recorded value. An upstream file with a different hash is not the frozen source used here. The supplied processed data and predictions are sufficient for the saved-result verification command.
+
+A fixed download is available at [revision `fb68be0afb20a697ef8b3b06123428bf44e8c786`](https://huggingface.co/datasets/SupraBench/Binding-Affinity/resolve/fb68be0afb20a697ef8b3b06123428bf44e8c786/data/records.parquet). On 16 October 2026, the upstream [revision metadata](https://huggingface.co/api/datasets/SupraBench/Binding-Affinity/revision/fb68be0afb20a697ef8b3b06123428bf44e8c786) and [file tree](https://huggingface.co/api/datasets/SupraBench/Binding-Affinity/tree/fb68be0afb20a697ef8b3b06123428bf44e8c786/data) recorded this full commit ID, the same 96,671,103-byte size and the same LFS SHA-256 shown above. The dataset card recorded `cc-by-4.0`. This checks the fixed upstream metadata against the frozen source identity; the archive was not downloaded again for this release. The full revision fixes the location, while the SHA-256 remains the file identity check.
+
+## Analysis population
+
+The source table contains 2,609 records. Requiring a usable parsed structure with at least one heavy atom for both host and guest retains 2,383 records. These records contain 2,260 unique raw host-SMILES/guest-SMILES pairs, 189 raw host-SMILES identifiers and 1,164 raw guest-SMILES identifiers. These are raw serialized identifiers, not standardized or canonical identities.
+
+Among the 2,383 retained records, 432 have a `task_id` containing 2–14 pipe-separated task-identifier tokens; all 432 carry the source label `eupmc`. The upstream documentation describes such task identifiers as averages over underlying measurements. This repository verifies the literal token count and membership. It does not independently infer the number of experiments represented by a token or record. Record counts, task-identifier-token counts, raw-SMILES-pair counts and canonical-identity counts are different quantities.
+
+The supplied tables preserve the frozen processing used in the analysis: structural filtering, condition bucketing, identity mappings, split construction and feature generation. Saved predictions, null comparisons, aggregations and operational-parent masks are subsequent analysis outputs. They are modifications of the upstream resource and do not imply endorsement by its authors.
+
+Prediction `row_index` values refer to zero-based physical row positions in the structure-valid condition table `data/clean/suprabench_bap_clean_cond.csv`. They must not be interpreted as positions in the original parquet archive or a manifest's `parquet_row` column. The complete 2,609-row manifest and the 226 excluded rows are under `data/population/`; the executable filter is `scripts/build_structure_valid_subset.py` and its saved verification is `data/population/structure_valid_verification.json`.
+
+## Scope of supplied material
+
+This repository contains curated numerical and structural records and the scientific artifacts needed by the documented commands. It does not redistribute article full text. Molecular-coordinate archives are unnecessary for saved-prediction scoring; tree training uses the supplied frozen feature array. The original 3D feature preparation used a wall-clock cutoff, so a fresh feature build is not claimed to reproduce that historical array.

@@ -1,0 +1,11 @@
+# Study overview and figure sources
+
+[Figure_1.png](Figure_1.png) and [Figure_1.pdf](Figure_1.pdf) are the current raster (600 dpi) and vector overview assets for *Cold-Split Evaluation of Host–Guest Affinity Prediction in SupraBench*. The overview covers (A) structure-validity filtering of the 2,609 released measurements to 2,383 records with a 2D record-relation schematic (host 22 + pyridine, not a 3D binding pose) and cyclodextrin/cucurbituril host examples, (B) independent raw-SMILES and canonical-key split designs together with the 37 / 1,984 (1.865%) released double-cold guest canonical-key recurrence callout, and (C) matched evaluation of models and six null controls across Prep → Train → Predict → Score, including dashed boxes for stage-specific uses of unlabeled held-out structures.
+
+Figure 1 was produced by a code-driven layout and local molecular-asset workflow whose final outputs are `Figure_1.png` and `Figure_1.pdf`; no final full-figure SVG was produced for this figure, and that upstream Python layout workflow has not been made portable in this repository. The file [source/Figure_1.svg](source/Figure_1.svg) is retained in place only as an earlier historical schematic and is disconnected from the current Figure 1 export path.
+
+[Source and rendering instructions](source/README.md) distinguish the asset export for Figure 1 from Figures 3–6 and S1–S3 rendered from frozen display values in an earlier plotting layout. New PNG/PDF/SVG outputs belong in ignored `runs/` directories, not in the source tree. Figure 2's historical composition pipeline remains outside the portable renderer.
+
+The current tree supplies the Figure 1 PNG/PDF assets and the numerical rendering entrypoint. No complete manuscript, supplementary document, TOC or full publication-asset bundle is supplied.
+
+Scientific figures, the `Figure_1.png` and `Figure_1.pdf` files, the retained historical `source/Figure_1.svg` file and frozen display inputs are CC BY 4.0 under the per-file assignments; credit the study and its applicable SupraBench/SupraBank sources. Newly supplied or adapted plotting code and associated documentation use MIT to the extent of the contributors' rights. The saved-result verifier does not redraw figures. See the root [README](../README.md) and [file-level licensing](../LICENSING.md).

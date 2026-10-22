@@ -1,0 +1,22 @@
+panel,mark_type,model,family,regime,block,seed,metric,value,unit,source
+a,paired_point,PAIR_RF,,s < 0.4,,,R2,0.282,pooled within similarity bin; n=319 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,sim_knn_k1,,s < 0.4,,,R2,-0.247,pooled within similarity bin; n=319 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,PAIR_RF,,s < 0.4,,,MAE,1.27,pooled within similarity bin; n=319 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,sim_knn_k1,,s < 0.4,,,MAE,1.54,pooled within similarity bin; n=319 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,PAIR_RF,,0.4 <= s <= 0.7,,,R2,0.414,pooled within similarity bin; n=1211 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,sim_knn_k1,,0.4 <= s <= 0.7,,,R2,-0.043,pooled within similarity bin; n=1211 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,PAIR_RF,,0.4 <= s <= 0.7,,,MAE,1.122,pooled within similarity bin; n=1211 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,sim_knn_k1,,0.4 <= s <= 0.7,,,MAE,1.433,pooled within similarity bin; n=1211 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,PAIR_RF,,s > 0.7,,,R2,0.475,pooled within similarity bin; n=454 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,sim_knn_k1,,s > 0.7,,,R2,0.186,pooled within similarity bin; n=454 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,PAIR_RF,,s > 0.7,,,MAE,1.164,pooled within similarity bin; n=454 test appearances,results/diagnostics/suprabench_sim_null_results.json
+a,paired_point,sim_knn_k1,,s > 0.7,,,MAE,1.458,pooled within similarity bin; n=454 test appearances,results/diagnostics/suprabench_sim_null_results.json
+b,condition_point,Condition-only RF,,,,,R2,-0.122,twelve-block equal-weight mean R2,results/diagnostics/suprabench_cond_audit_results.json
+b,condition_point,Descriptor-RF,,,,,R2,0.387,twelve-block equal-weight mean R2,results/diagnostics/suprabench_cond_audit_results.json
+b,condition_point,Descriptor-RF + conditions,,,,,R2,0.377,twelve-block equal-weight mean R2,results/diagnostics/suprabench_cond_audit_results.json
+c,paired_point,PAIR_RF,calixarene,s < 0.4,,,R2,0.37,pooled low-similarity bin; n=53 test appearances,results/diagnostics/suprabench_pregate_results.json
+c,paired_point,sim_knn_k5,calixarene,s < 0.4,,,R2,-0.29,pooled low-similarity bin; n=53 test appearances,results/diagnostics/suprabench_pregate_results.json
+c,paired_point,PAIR_RF,other,s < 0.4,,,R2,0.185,pooled low-similarity bin; n=155 test appearances,results/diagnostics/suprabench_pregate_results.json
+c,paired_point,sim_knn_k5,other,s < 0.4,,,R2,-0.18,pooled low-similarity bin; n=155 test appearances,results/diagnostics/suprabench_pregate_results.json
+c,paired_point,PAIR_RF,cyclodextrin,s < 0.4,,,R2,-0.11,pooled low-similarity bin; n=70 test appearances,results/diagnostics/suprabench_pregate_results.json
+c,paired_point,sim_knn_k5,cyclodextrin,s < 0.4,,,R2,0.06,pooled low-similarity bin; n=70 test appearances,results/diagnostics/suprabench_pregate_results.json

@@ -1,0 +1,62 @@
+{
+  "schema": "e1e2-portable-path-map-v1",
+  "snapshot_commit": "81b1d092b4d2bdd4a4f293f340e7d369395ac053",
+  "snapshot_zip_basename": "suprabench-cold-split-audit_81b1d092b4d2bdd4a4f293f340e7d369395ac053.zip",
+  "snapshot_root_definition": "the extracted repository root containing data/ and results/",
+  "sources": {
+    "canonical_features": {
+      "bytes": 30519868,
+      "sha256": "ffe6d344116e6a4ce36c0e90709666848f2319acd516c6fe2a54da47612d5310",
+      "scope": "snapshot",
+      "relative_path": "data/canonical_cpu/features/tabular_features.npz",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/canonical_cpu/features/tabular_features.npz"
+    },
+    "canonical_baseline_predictions": {
+      "bytes": 18462730,
+      "sha256": "5c5e72dc4b59219fb376c3c20b50534e3cbccb63d0c8603832f2d1baba691009",
+      "scope": "snapshot",
+      "relative_path": "results/canonical_cpu/run_a/predictions_cpu.csv",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/predictions_cpu.csv"
+    },
+    "canonical_baseline_metrics": {
+      "bytes": 44151,
+      "sha256": "54cd2d409b930d4cb40bca83fa98e02fb1ed24c1b9225ea1679cb1d9a2e8b82b",
+      "scope": "snapshot",
+      "relative_path": "results/canonical_cpu/run_a/metrics_cpu.tsv",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/metrics_cpu.tsv"
+    },
+    "family_membership": {
+      "bytes": 197140,
+      "sha256": "12c99d8df84e238c603d22b68536ba88e30a00f1f05d0dda4f2de24c51040e02",
+      "scope": "snapshot",
+      "relative_path": "data/folds/folds_family_cold.csv",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/folds/folds_family_cold.csv"
+    },
+    "family_predictions": {
+      "bytes": 2527320,
+      "sha256": "f982b2cbb9aacf3bffc82ed844d2e1e34f36a5549e8bc834f5de94bb86b66b63",
+      "scope": "snapshot",
+      "relative_path": "data/released_predictions/predictions_family_cold.csv",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/released_predictions/predictions_family_cold.csv"
+    },
+    "e1_train_masks": {
+      "bytes": 60891571,
+      "sha256": "f791389fcdb03ddc116a72467bf5f3cc322dc819ff3458cacc2c1ca5f44b4256",
+      "scope": "original_run",
+      "relative_path": "masks/train_masks.csv"
+    },
+    "e1_block_map": {
+      "bytes": 335,
+      "sha256": "cc1e6d2f1290512103a01bf23275b32fd5dcdf274d3f8d67247cc93b397041e1",
+      "scope": "original_run",
+      "relative_path": "masks/block_map.csv"
+    },
+    "e1_block_arm_support": {
+      "bytes": 9822,
+      "sha256": "4af17619c34b288b5ed9127756697f69aa774233fa7c20dd4967b8c333057c9f",
+      "scope": "original_run",
+      "relative_path": "masks/block_arm_support.csv"
+    }
+  },
+  "adaptation": "locations only; identities and scientific settings come from the preserved frozen contract"
+}

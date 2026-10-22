@@ -1,0 +1,45 @@
+si_path	public_path	coverage_class	note
+data/excluded_records.csv	data/population/excluded_records.csv	public_science_addendum	Structure-filter exclusions, with record-level reason codes.
+data/excluded_summary_by_class.csv	data/population/excluded_summary_by_class.csv	public_science_addendum	Structure-filter summary by exclusion class.
+data/excluded_summary_by_host.csv	data/population/excluded_summary_by_host.csv	public_science_addendum	Structure-filter summary by host identifier.
+data/family_error_decomposition.csv	results/record_audit/family_error_decomposition.csv	public_science_addendum	Frozen record-level family error decomposition.
+data/leave_two_blocks.csv	results/record_audit/leave_two_blocks.csv	public_science_addendum	Frozen leave-two-block audit table.
+data/record_semantics.json	results/record_audit/record_semantics.json	public_science_addendum	Frozen record, pair, identifier, and task-identifier counting semantics.
+data/structure_valid_filter.md	docs/STRUCTURE_VALID_FILTER.md	public_science_addendum	Public definition of the 2,609-to-2,383 structure-valid filter.
+data/structure_valid_verification.json	data/population/structure_valid_verification.json	public_science_addendum	Saved count and file-binding verification with portable paths.
+env/ENVIRONMENT.md	docs/REPRODUCTION.md; environments/verify.txt; environments/gnn.txt; environments/trees.txt	navigation_superseded	Current public environment and scope documents replace the historical environment note.
+provenance/gnn-a.json	results/canonical_gnn_run_a/provenance.json	public_science_addendum	Allow-listed scientific provenance; local execution paths and run metadata are excluded.
+repro/MANIFEST.csv	protocols/verification_manifest.json; FILE_LICENSES.tsv	navigation_superseded	Current integrity bindings and per-file rights replace the first historical package manifest.
+repro/MANIFEST_V2.csv	protocols/verification_manifest.json; FILE_LICENSES.tsv	navigation_superseded	Current integrity bindings and per-file rights replace the second historical package manifest.
+repro/MANIFEST_V3.csv	protocols/verification_manifest.json; FILE_LICENSES.tsv	navigation_superseded	Current integrity bindings and per-file rights replace the third historical package manifest.
+repro/PROVENANCE.md	docs/DATA_SOURCES.md; docs/REPRODUCTION.md	navigation_superseded	Current public source and scope documents replace historical package provenance prose.
+repro/canonical_rebuild_20260802/config/canonical_rebuild_config.json	data/canonical_cpu/config/canonical_rebuild_config.json	existing_public_equivalent	Same public canonical rebuild configuration under the current layout.
+repro/canonical_rebuild_20260802/docs/CANONICAL_RESULT_INTERFACE_V2.md	docs/REPRODUCTION.md; protocols/verification_manifest.json	navigation_superseded	Current scoring/replay scope and exact artifact bindings replace the dated interface document.
+repro/canonical_rebuild_20260802/features/frozen/feature_schema.json	data/canonical_cpu/features/feature_schema.json	existing_public_equivalent	Same frozen feature schema under the current layout.
+repro/canonical_rebuild_20260802/results/model_cpu_deterministic_v1_repeat_comparison/canonical_cpu_aggregate_audit_v1.tsv	results/canonical_cpu/canonical_cpu_aggregate_audit_v1.tsv	existing_public_equivalent	Same canonical CPU repeat-comparison table under the current layout.
+repro/canonical_rebuild_20260802/runs/model_cpu_deterministic_v1_run_a/metrics_cpu.tsv	results/canonical_cpu/run_a/metrics_cpu.tsv	existing_public_equivalent	Same canonical CPU run-A metrics under the current layout.
+repro/canonical_rebuild_20260802/scripts/build_canonical_folds.py	data/canonical_cpu/folds/; protocols/verification_manifest.json	historical_execution_boundary	Frozen canonical folds and bindings are public; the dated build driver is not required for saved-result replay.
+repro/canonical_rebuild_20260802/scripts/build_model_features.py	data/canonical_cpu/features/; protocols/verification_manifest.json	historical_execution_boundary	Frozen feature artifacts and schema are public; historical external preparation inputs are not all redistributable.
+repro/configs/	data/configs/; results/gnn_saved/jobs.json; results/tree_saved/jobs.json	existing_public_equivalent	Frozen model and job configurations under the current layout.
+repro/configs/null_models.json	data/source/suprabench_baselines_modern.py; scripts/diagnostics/suprabench_pregate.py	public_science_addendum	PROPER, simknn, rf, and predict_all define the released modern six-null implementation; the diagnostic script retains the corresponding implementation.
+repro/folds/	data/folds/	existing_public_equivalent	Frozen released-identifier folds and identifier maps under the current layout.
+repro/folds/folds_double_cold_test.csv	data/folds/folds_double_cold_test.csv	existing_public_equivalent	Same double-cold test membership under the current layout.
+repro/parent_identity_b1/FINAL_RESULTS.tsv	results/parent_identity_b1/FINAL_RESULTS.tsv	existing_public_equivalent	Same operational-parent sensitivity summary under the current layout.
+repro/predictions/block_level_deltaR2.csv	data/released_predictions/block_level_deltaR2.csv	existing_public_equivalent	Same released-prediction block margins under the current layout.
+repro/predictions/predictions_double_cold.csv	data/released_predictions/predictions_double_cold.csv	existing_public_equivalent	Same released double-cold predictions under the current layout.
+repro/predictions/predictions_family_cold.csv	data/released_predictions/predictions_family_cold.csv	existing_public_equivalent	Same released family-cold predictions under the current layout.
+repro/scripts/export_folds.py	data/folds/; protocols/verification_manifest.json	historical_execution_boundary	Frozen fold tables and exact bindings are public; the historical export wrapper is superseded by those artifacts.
+repro/sensitivity/p1_d6sc_overlap/	protocols/p1_d6sc_overlap/	public_science_addendum	Frozen predicate, labels, membership manifests, comparison, and fixed-prediction Stage-B audit.
+repro/source_results/canonical_identity_recurrence_2026-08-01.tsv	data/identity/canonical_identity_recurrence_2026-08-01.tsv	public_science_addendum	Frozen recurrence audit under the current identity layout.
+repro/source_results/suprabench_baselines_modern_results.json	data/reference/suprabench_baselines_modern_results.json	existing_public_equivalent	Same modern-baseline result under the current layout.
+repro/source_results/suprabench_cond_audit_results.json	results/diagnostics/suprabench_cond_audit_results.json	public_science_addendum	Allow-listed saved condition audit, with private metadata removed.
+repro/source_results/suprabench_pregate_results.json	results/diagnostics/suprabench_pregate_results.json	public_science_addendum	Allow-listed saved pregate result, with private metadata removed.
+repro/source_results/suprabench_sim_null_results.json	results/diagnostics/suprabench_sim_null_results.json	public_science_addendum	Allow-listed saved similarity-null result, with private metadata removed.
+repro/source_scripts/suprabench_baselines_modern.py	data/source/suprabench_baselines_modern.py	existing_public_equivalent	Same modern-baseline producer under the current layout.
+repro/source_scripts/suprabench_cond_audit.py	scripts/diagnostics/suprabench_cond_audit.py	public_science_addendum	Path-parameterized scientific producer; not executed during packaging.
+repro/source_scripts/suprabench_killgate.py	scripts/diagnostics/suprabench_killgate.py	public_science_addendum	Path-parameterized scientific producer; not executed during packaging.
+repro/source_scripts/suprabench_marginal_killgate.py	scripts/diagnostics/suprabench_marginal_killgate.py	public_science_addendum	Path-parameterized scientific producer; saved results include the identity-marginal and full similarity audit.
+repro/source_scripts/suprabench_pregate.py	scripts/diagnostics/suprabench_pregate.py	public_science_addendum	Path-parameterized scientific producer; not executed during packaging.
+repro/source_scripts/suprabench_sim_null.py	scripts/diagnostics/suprabench_sim_null.py	public_science_addendum	Path-parameterized scientific producer; not executed during packaging.
+source/leave_two_blocks.py	scripts/leave_two_blocks.py	public_science_addendum	Path-parameterized saved-record audit producer.
+source/record_and_algebra_audit.py	scripts/record_and_algebra_audit.py	public_science_addendum	Path-parameterized record semantics and algebra audit producer.

@@ -1,0 +1,24 @@
+{
+  "panel_a": {
+    "mean_ticks": {
+      "GINE": {
+        "random": 0.5448512673377991,
+        "host_cold": 0.3061508536338806,
+        "guest_cold": 0.523601520061493,
+        "double_cold": 0.21389750838279725
+      },
+      "AttentiveFP": {
+        "random": 0.5959810376167297,
+        "host_cold": 0.30228949785232545,
+        "guest_cold": 0.5710311651229858,
+        "double_cold": 0.23931094110012055
+      }
+    }
+  },
+  "panel_b": {
+    "historical_aggregates": {
+      "GINE": -0.111,
+      "AttentiveFP": -0.046
+    }
+  }
+}

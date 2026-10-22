@@ -1,0 +1,102 @@
+{
+  "source": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/FILE_LICENSES.tsv",
+  "assignments_verbatim": [
+    {
+      "source_id": "canonical_features",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/canonical_cpu/features/tabular_features.npz",
+      "path": "data/canonical_cpu/features/tabular_features.npz",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "canonical_baseline_predictions",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/predictions_cpu.csv",
+      "path": "results/canonical_cpu/run_a/predictions_cpu.csv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "canonical_baseline_metrics",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/metrics_cpu.tsv",
+      "path": "results/canonical_cpu/run_a/metrics_cpu.tsv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "family_membership",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/folds/folds_family_cold.csv",
+      "path": "data/folds/folds_family_cold.csv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "family_predictions",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/released_predictions/predictions_family_cold.csv",
+      "path": "data/released_predictions/predictions_family_cold.csv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "identity_projection_upstream:canonical_membership",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/canonical_cpu/folds/folds_double_canonical.csv",
+      "path": "data/canonical_cpu/folds/folds_double_canonical.csv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "identity_projection_upstream:parent_appearance_keys",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/parent_identity_b1/stage_b/APPEARANCE_CLASSIFICATION_MASKS.csv",
+      "path": "results/parent_identity_b1/stage_b/APPEARANCE_CLASSIFICATION_MASKS.csv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "identity_projection_upstream:canonical_aliases",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/identity/canonical_identity_alias_map_2026-08-01.tsv",
+      "path": "data/identity/canonical_identity_alias_map_2026-08-01.tsv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "identity_projection_upstream:parent_mapping",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/parent_identity_b1/identity/v2_identity_mapping.csv",
+      "path": "results/parent_identity_b1/identity/v2_identity_mapping.csv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "identity_projection_upstream:parent_decisions",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/parent_identity_b1/identity/v2_group_review_decisions.csv",
+      "path": "results/parent_identity_b1/identity/v2_group_review_decisions.csv",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "identity_projection_upstream:canonical_config",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/canonical_cpu/config/canonical_rebuild_config.json",
+      "path": "data/canonical_cpu/config/canonical_rebuild_config.json",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    },
+    {
+      "source_id": "identity_projection_upstream:model_config",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/canonical_cpu/config/model_stage_config.json",
+      "path": "data/canonical_cpu/config/model_stage_config.json",
+      "license_id": "CC-BY-4.0",
+      "rights_class": "scientific_material",
+      "attribution": "SupraBench; SupraBank where applicable; audit contributors for modifications; see THIRD_PARTY.md"
+    }
+  ],
+  "companion_new_file_license": "not separately specified in COMPUTATIONAL_SUPPLEMENT.zip; no new blanket reuse grant there; for this release see the repository-root FILE_LICENSES.tsv"
+}

@@ -1,0 +1,76 @@
+{
+  "identity_policy": {
+    "policy_id": "rdkit_2026.03.3_canonical_isomeric_preserve_fragments_charge_isotopes_stereo",
+    "parser": "Chem.MolFromSmiles(raw, sanitize=True)",
+    "serializer": "Chem.MolToSmiles(mol, canonical=True, isomericSmiles=True)",
+    "canonical_key": "lowercase_sha256_utf8_of_canonical_isomeric_smiles",
+    "group_order": "lexicographic_lowercase_sha256",
+    "preserve_fragments": true,
+    "preserve_formal_charge": true,
+    "preserve_isotopes": true,
+    "preserve_defined_stereo": true,
+    "salt_stripping": false,
+    "neutralization": false,
+    "tautomer_canonicalization": false,
+    "parse_failure": "STOP"
+  },
+  "double_cold_definition": {
+    "split": "double_cold",
+    "attempted_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "rng": "numpy.random.RandomState(seed)",
+    "candidate_order": "lexicographic_lowercase_sha256",
+    "holdout_fraction": 0.25,
+    "holdout_count_rule": "max(1, int(0.25 * n_canonical_groups))",
+    "expected_canonical_host_groups": 188,
+    "expected_canonical_guest_groups": 1152,
+    "expected_held_host_groups": 47,
+    "expected_held_guest_groups": 288,
+    "stratification": false,
+    "balancing": false,
+    "test_rule": "held_host_AND_held_guest",
+    "train_rule": "unheld_host_AND_unheld_guest",
+    "neither_rule": "exactly_one_axis_held",
+    "validity": {
+      "minimum_test_rows": 25,
+      "minimum_distinct_finite_test_targets": 2,
+      "minimum_train_rows": 50,
+      "any_invalid_seed": "STOP_WHOLE_BUILD",
+      "replacement_seed": "FORBIDDEN"
+    },
+    "fold_index": "seed",
+    "materialized_roles": [
+      "train",
+      "test",
+      "neither"
+    ]
+  },
+  "rf": {
+    "n_estimators": 300,
+    "n_jobs": 1,
+    "random_state": 0,
+    "max_features": "sqrt"
+  },
+  "additive": {
+    "formula": "host_only_RF + guest_only_RF - mean(y_train)",
+    "additional_fit": false
+  },
+  "sim_knn_k5": {
+    "k": 5,
+    "combined_similarity": "(host_tanimoto + guest_tanimoto) / 2",
+    "neighbor_selection": "numpy.argpartition(-combined, min(k, len(combined)-1))[:k]",
+    "weight": "combined_similarity + 1e-6"
+  }
+}

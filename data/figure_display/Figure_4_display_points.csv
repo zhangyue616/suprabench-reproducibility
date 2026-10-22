@@ -1,0 +1,208 @@
+panel,mark_type,model,family,regime,block,seed,metric,value,unit,source
+a,matrix_cell,PAIR_RF,,random,,,R2,0.677,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,PAIR_RF,,host_cold,,,R2,0.448,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,PAIR_RF,,guest_cold,,,R2,0.641,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,PAIR_RF,,double_cold,,,R2,0.38173253650154654,five-seed equal-block mean R2,results/tree_saved/
+a,matrix_cell,ECFP_RF,,random,,,R2,0.619,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,ECFP_RF,,host_cold,,,R2,0.389,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,ECFP_RF,,guest_cold,,,R2,0.588,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,ECFP_RF,,double_cold,,,R2,0.35260860974449715,five-seed equal-block mean R2,results/tree_saved/
+a,matrix_cell,XGB_pair,,random,,,R2,0.678,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,XGB_pair,,host_cold,,,R2,0.446,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,XGB_pair,,guest_cold,,,R2,0.618,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,XGB_pair,,double_cold,,,R2,0.3483063826958338,five-seed equal-block mean R2,results/tree_saved/
+a,matrix_cell,XGB_ecfp,,random,,,R2,0.619,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,XGB_ecfp,,host_cold,,,R2,0.366,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,XGB_ecfp,,guest_cold,,,R2,0.559,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,XGB_ecfp,,double_cold,,,R2,0.2989433993895848,five-seed equal-block mean R2,results/tree_saved/
+a,matrix_cell,LGBM_pair,,random,,,R2,0.683,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,LGBM_pair,,host_cold,,,R2,0.411,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,LGBM_pair,,guest_cold,,,R2,0.62,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,LGBM_pair,,double_cold,,,R2,0.3542797328431241,five-seed equal-block mean R2,results/tree_saved/
+a,matrix_cell,LGBM_ecfp,,random,,,R2,0.636,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,LGBM_ecfp,,host_cold,,,R2,0.338,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,LGBM_ecfp,,guest_cold,,,R2,0.586,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,LGBM_ecfp,,double_cold,,,R2,0.255171809169801,five-seed equal-block mean R2,results/tree_saved/
+a,matrix_cell,3D_pair_RF,,random,,,R2,0.663,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,3D_pair_RF,,host_cold,,,R2,0.443,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,3D_pair_RF,,guest_cold,,,R2,0.619,original fixed-seed pooled R2,data/reference/suprabench_baselines_modern_results.json
+a,matrix_cell,3D_pair_RF,,double_cold,,,R2,0.3589085521467096,five-seed equal-block mean R2,results/tree_saved/
+a,matrix_cell,GINE,,random,,,R2,0.5448512673377991,five-seed pooled R2 mean,results/gnn_saved/
+a,matrix_cell,GINE,,host_cold,,,R2,0.3061508536338806,five-seed pooled R2 mean,results/gnn_saved/
+a,matrix_cell,GINE,,guest_cold,,,R2,0.523601520061493,five-seed pooled R2 mean,results/gnn_saved/
+a,matrix_cell,GINE,,double_cold,,,R2,0.21389750838279725,five-seed equal-block mean R2,results/gnn_saved/
+a,matrix_cell,AttentiveFP,,random,,,R2,0.5959810376167297,five-seed pooled R2 mean,results/gnn_saved/
+a,matrix_cell,AttentiveFP,,host_cold,,,R2,0.30228949785232545,five-seed pooled R2 mean,results/gnn_saved/
+a,matrix_cell,AttentiveFP,,guest_cold,,,R2,0.5710311651229858,five-seed pooled R2 mean,results/gnn_saved/
+a,matrix_cell,AttentiveFP,,double_cold,,,R2,0.23931094110012055,five-seed equal-block mean R2,results/gnn_saved/
+b,block_point,PAIR_RF,,,0,,margin_R2,0.12826994229887637,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,1,,margin_R2,0.21171160546648382,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,2,,margin_R2,0.06861845176904213,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,3,,margin_R2,0.12518199781718067,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,4,,margin_R2,0.16335969119008456,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,5,,margin_R2,0.1830356998259591,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,6,,margin_R2,0.029079476132220238,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,7,,margin_R2,0.018176681006240016,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,8,,margin_R2,-0.01743098992067844,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,9,,margin_R2,0.007835944041269416,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,10,,margin_R2,0.07205303482694814,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,PAIR_RF,,,11,,margin_R2,0.09466128330395782,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,twelve_block_mean_tick,PAIR_RF,,,,,margin_R2,0.09037940147979866,equal_mean_of_twelve_displayed_block_points,results/tree_saved/
+b,block_point,ECFP_RF,,,0,,margin_R2,-0.5064113814622744,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,1,,margin_R2,0.218122662203319,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,2,,margin_R2,0.16412389608853573,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,3,,margin_R2,0.35545104518871806,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,4,,margin_R2,0.1720229985988137,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,5,,margin_R2,0.09885158893827169,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,6,,margin_R2,-0.0135264217757745,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,7,,margin_R2,0.11213372195084137,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,8,,margin_R2,0.06012837904301331,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,9,,margin_R2,-0.05857818156562518,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,10,,margin_R2,0.035423765947709726,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,ECFP_RF,,,11,,margin_R2,0.0973236235174418,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,twelve_block_mean_tick,ECFP_RF,,,,,margin_R2,0.06125547472274919,equal_mean_of_twelve_displayed_block_points,results/tree_saved/
+b,block_point,XGB_pair,,,0,,margin_R2,0.12282982080242463,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,1,,margin_R2,0.23642241698073124,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,2,,margin_R2,-0.004244294458990838,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,3,,margin_R2,0.026931164178322774,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,4,,margin_R2,0.1082097777904308,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,5,,margin_R2,0.20239793776684908,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,6,,margin_R2,0.044862489599402956,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,7,,margin_R2,-0.05578449866593864,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,8,,margin_R2,0.023053407950301842,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,9,,margin_R2,-0.14922892069218863,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,10,,margin_R2,0.09490851509889195,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_pair,,,11,,margin_R2,0.033081155738793735,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,twelve_block_mean_tick,XGB_pair,,,,,margin_R2,0.05695324767408591,equal_mean_of_twelve_displayed_block_points,results/tree_saved/
+b,block_point,XGB_ecfp,,,0,,margin_R2,-0.4578772285673874,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,1,,margin_R2,0.12028298121260379,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,2,,margin_R2,0.0651312801297848,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,3,,margin_R2,0.09608928910202882,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,4,,margin_R2,0.15449739785802724,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,5,,margin_R2,0.04435525654965551,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,6,,margin_R2,-0.06850695143300671,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,7,,margin_R2,0.12182796099363777,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,8,,margin_R2,0.03581982879151888,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,9,,margin_R2,-0.021612741702778226,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,10,,margin_R2,-0.053508516666092173,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,XGB_ecfp,,,11,,margin_R2,0.05458461614605081,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,twelve_block_mean_tick,XGB_ecfp,,,,,margin_R2,0.007590264367836924,equal_mean_of_twelve_displayed_block_points,results/tree_saved/
+b,block_point,LGBM_pair,,,0,,margin_R2,0.08050675899584672,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,1,,margin_R2,0.23205718260947905,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,2,,margin_R2,0.049347445595429765,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,3,,margin_R2,0.1528655659568125,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,4,,margin_R2,0.10007011367750322,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,5,,margin_R2,0.14010720946374716,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,6,,margin_R2,0.06695688118763521,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,7,,margin_R2,-0.17830076796616204,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,8,,margin_R2,0.009447023065428262,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,9,,margin_R2,-0.035675225004315324,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,10,,margin_R2,0.09362567193389026,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_pair,,,11,,margin_R2,0.04411131434121869,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,twelve_block_mean_tick,LGBM_pair,,,,,margin_R2,0.06292659782137612,equal_mean_of_twelve_displayed_block_points,results/tree_saved/
+b,block_point,LGBM_ecfp,,,0,,margin_R2,-0.5778814505749816,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,1,,margin_R2,0.0416298091171764,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,2,,margin_R2,0.021998717605084782,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,3,,margin_R2,-0.053910297268524365,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,4,,margin_R2,0.0905651079210216,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,5,,margin_R2,0.09435672648539428,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,6,,margin_R2,-0.10395568740609307,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,7,,margin_R2,0.016398160928892326,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,8,,margin_R2,0.04013482716513943,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,9,,margin_R2,-0.10689637025334842,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,10,,margin_R2,-0.042842654346639295,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,LGBM_ecfp,,,11,,margin_R2,0.1462272004035149,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,twelve_block_mean_tick,LGBM_ecfp,,,,,margin_R2,-0.03618132585194692,equal_mean_of_twelve_displayed_block_points,results/tree_saved/
+b,block_point,3D_pair_RF,,,0,,margin_R2,0.17365282472489457,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,1,,margin_R2,0.18186511513323506,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,2,,margin_R2,0.03866498726827035,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,3,,margin_R2,0.11770360038791808,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,4,,margin_R2,0.18834586949094198,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,5,,margin_R2,0.10221708730730054,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,6,,margin_R2,-0.02194978441339306,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,7,,margin_R2,-0.04466201266904808,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,8,,margin_R2,-0.048946991350607025,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,9,,margin_R2,0.00886242871391425,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,10,,margin_R2,0.020120009939767657,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,block_point,3D_pair_RF,,,11,,margin_R2,0.09479187096634585,fixed_block_margin_mean_over_five_training_seeds,results/tree_saved/
+b,twelve_block_mean_tick,3D_pair_RF,,,,,margin_R2,0.0675554171249617,equal_mean_of_twelve_displayed_block_points,results/tree_saved/
+b,block_point,GINE,,,0,,margin_R2,-0.6429179409239547,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,1,,margin_R2,0.00799190741347049,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,2,,margin_R2,0.09056193560921601,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,3,,margin_R2,-0.26462213048033806,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,4,,margin_R2,-0.052012406867619744,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,5,,margin_R2,0.03974751948529394,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,6,,margin_R2,-0.18175724278051036,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,7,,margin_R2,0.010073579336991045,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,8,,margin_R2,0.02284598378648354,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,9,,margin_R2,-0.0846278450429271,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,10,,margin_R2,0.09586905587037634,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,GINE,,,11,,margin_R2,0.029380064926110682,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,twelve_block_mean_tick,GINE,,,,,margin_R2,-0.07745562663895067,equal_mean_of_twelve_displayed_block_points,results/gnn_saved/
+b,block_point,AttentiveFP,,,0,,margin_R2,-0.6542002657149093,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,1,,margin_R2,-0.3863170172615173,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,2,,margin_R2,0.10946087569558074,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,3,,margin_R2,0.05506689301438241,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,4,,margin_R2,0.06578058095586659,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,5,,margin_R2,0.14096546887570532,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,6,,margin_R2,-0.04935564528066296,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,7,,margin_R2,0.12214198210417244,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,8,,margin_R2,0.0653066637944181,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,9,,margin_R2,0.027170131450908352,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,10,,margin_R2,0.028372470024429063,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,block_point,AttentiveFP,,,11,,margin_R2,-0.14889846471790177,fixed_block_margin_mean_over_five_training_seeds,results/gnn_saved/
+b,twelve_block_mean_tick,AttentiveFP,,,,,margin_R2,-0.052042193921627365,equal_mean_of_twelve_displayed_block_points,results/gnn_saved/
+c,training_seed_point,PAIR_RF,,,,0,mean_margin_R2,0.09503991115167403,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,PAIR_RF,,,,1,mean_margin_R2,0.08905650059087888,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,PAIR_RF,,,,2,mean_margin_R2,0.0885078221967096,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,PAIR_RF,,,,3,mean_margin_R2,0.08593338566460063,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,PAIR_RF,,,,4,mean_margin_R2,0.09335938779513013,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,five_seed_mean_tick,PAIR_RF,,,,,mean_margin_R2,0.09037940147979866,mean_of_five_displayed_training_seed_points,results/tree_saved/
+c,training_seed_point,ECFP_RF,,,,0,mean_margin_R2,0.05885959728134158,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,ECFP_RF,,,,1,mean_margin_R2,0.059388210040415335,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,ECFP_RF,,,,2,mean_margin_R2,0.061162756190731166,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,ECFP_RF,,,,3,mean_margin_R2,0.06519383785280052,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,ECFP_RF,,,,4,mean_margin_R2,0.06167297224845739,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,five_seed_mean_tick,ECFP_RF,,,,,mean_margin_R2,0.061255474722749205,mean_of_five_displayed_training_seed_points,results/tree_saved/
+c,training_seed_point,XGB_pair,,,,0,mean_margin_R2,0.06620629756428621,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,XGB_pair,,,,1,mean_margin_R2,0.06152519214925986,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,XGB_pair,,,,2,mean_margin_R2,0.03902486591317079,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,XGB_pair,,,,3,mean_margin_R2,0.06672330328601421,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,XGB_pair,,,,4,mean_margin_R2,0.05128657945769848,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,five_seed_mean_tick,XGB_pair,,,,,mean_margin_R2,0.05695324767408592,mean_of_five_displayed_training_seed_points,results/tree_saved/
+c,training_seed_point,XGB_ecfp,,,,0,mean_margin_R2,0.00917252032734773,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,XGB_ecfp,,,,1,mean_margin_R2,0.013778394746560072,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,XGB_ecfp,,,,2,mean_margin_R2,0.02466863521712841,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,XGB_ecfp,,,,3,mean_margin_R2,-0.004729895504536018,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,XGB_ecfp,,,,4,mean_margin_R2,-0.004938332947315559,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,five_seed_mean_tick,XGB_ecfp,,,,,mean_margin_R2,0.007590264367836929,mean_of_five_displayed_training_seed_points,results/tree_saved/
+c,training_seed_point,LGBM_pair,,,,0,mean_margin_R2,0.06071924448816996,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,LGBM_pair,,,,1,mean_margin_R2,0.060630904424311606,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,LGBM_pair,,,,2,mean_margin_R2,0.0748824078607092,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,LGBM_pair,,,,3,mean_margin_R2,0.06119810821687844,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,LGBM_pair,,,,4,mean_margin_R2,0.057202324116811414,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,five_seed_mean_tick,LGBM_pair,,,,,mean_margin_R2,0.06292659782137613,mean_of_five_displayed_training_seed_points,results/tree_saved/
+c,training_seed_point,LGBM_ecfp,,,,0,mean_margin_R2,-0.03206613631182695,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,LGBM_ecfp,,,,1,mean_margin_R2,-0.035269963788856516,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,LGBM_ecfp,,,,2,mean_margin_R2,-0.03959712278169122,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,LGBM_ecfp,,,,3,mean_margin_R2,-0.03293361044789142,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,LGBM_ecfp,,,,4,mean_margin_R2,-0.04103979592946854,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,five_seed_mean_tick,LGBM_ecfp,,,,,mean_margin_R2,-0.03618132585194693,mean_of_five_displayed_training_seed_points,results/tree_saved/
+c,training_seed_point,3D_pair_RF,,,,0,mean_margin_R2,0.07030578953178093,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,3D_pair_RF,,,,1,mean_margin_R2,0.06277211168742654,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,3D_pair_RF,,,,2,mean_margin_R2,0.06329189847144508,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,3D_pair_RF,,,,3,mean_margin_R2,0.07352922106599315,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,training_seed_point,3D_pair_RF,,,,4,mean_margin_R2,0.06787806486816272,training_seed_equal_mean_over_twelve_fixed_blocks,results/tree_saved/
+c,five_seed_mean_tick,3D_pair_RF,,,,,mean_margin_R2,0.06755541712496169,mean_of_five_displayed_training_seed_points,results/tree_saved/
+c,training_seed_point,GINE,,,,0,mean_margin_R2,-0.09722399086974239,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,training_seed_point,GINE,,,,1,mean_margin_R2,-0.13265232117198086,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,training_seed_point,GINE,,,,2,mean_margin_R2,-0.014709848873040837,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,training_seed_point,GINE,,,,3,mean_margin_R2,-0.05904482673825995,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,training_seed_point,GINE,,,,4,mean_margin_R2,-0.08364714554172929,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,five_seed_mean_tick,GINE,,,,,mean_margin_R2,-0.07745562663895067,mean_of_five_displayed_training_seed_points,results/gnn_saved/
+c,training_seed_point,AttentiveFP,,,,0,mean_margin_R2,-0.12213374049685573,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,training_seed_point,AttentiveFP,,,,1,mean_margin_R2,-0.051501054279229797,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,training_seed_point,AttentiveFP,,,,2,mean_margin_R2,-0.04969558488549963,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,training_seed_point,AttentiveFP,,,,3,mean_margin_R2,-0.03452335170132097,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,training_seed_point,AttentiveFP,,,,4,mean_margin_R2,-0.002357238245230676,training_seed_equal_mean_over_twelve_fixed_blocks,results/gnn_saved/
+c,five_seed_mean_tick,AttentiveFP,,,,,mean_margin_R2,-0.05204219392162736,mean_of_five_displayed_training_seed_points,results/gnn_saved/

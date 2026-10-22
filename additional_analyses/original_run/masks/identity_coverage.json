@@ -1,0 +1,168 @@
+{
+  "status": "IDENTITY_ONLY_MASKS_BUILT",
+  "membership_input_rows": 28596,
+  "original_row_universe": 2383,
+  "original_test_appearances": 1716,
+  "block_count": 12,
+  "source_projection_rows": {
+    "membership": 28596,
+    "appearance_keys": 4520,
+    "aliases": 1353,
+    "parent_mapping": 1353,
+    "decisions": 47,
+    "uncertain_links": 7
+  },
+  "identity_counts": {
+    "guest": 1164,
+    "host": 189
+  },
+  "raw_id_primary_parent_conflicts": 0,
+  "raw_id_canonical_alias_conflicts": 0,
+  "nonempty_appearance_sha_alias_checks": 4520,
+  "membership_sha_alias_checks": 57192,
+  "all_membership_roles_identity_covered": true,
+  "role_identity_counts": {
+    "train": {
+      "guest": 1164,
+      "host": 189
+    },
+    "test": {
+      "guest": 762,
+      "host": 155
+    },
+    "neither": {
+      "guest": 1163,
+      "host": 189
+    }
+  },
+  "decisions": {
+    "accepted_as_operational": 44,
+    "uncertain": 3
+  },
+  "fallback_groups": [
+    {
+      "role": "host",
+      "anchor_raw_id": 30,
+      "review_group_id": "v2_parent_neutralized:host:60375fd0ab73989e",
+      "same_operational_key_members": [
+        {
+          "raw_id": 24,
+          "primary_is_strict": true,
+          "review_group_id": "v2_parent_neutralized:host:60375fd0ab73989e",
+          "strict_equals_operational": false,
+          "uncertain": true
+        },
+        {
+          "raw_id": 30,
+          "primary_is_strict": true,
+          "review_group_id": "v2_parent_neutralized:host:60375fd0ab73989e",
+          "strict_equals_operational": false,
+          "uncertain": true
+        }
+      ]
+    },
+    {
+      "role": "host",
+      "anchor_raw_id": 82,
+      "review_group_id": "v2_parent_neutralized:host:1b9dec4dfeaaf627",
+      "same_operational_key_members": [
+        {
+          "raw_id": 14,
+          "primary_is_strict": true,
+          "review_group_id": "v2_parent_neutralized:host:1b9dec4dfeaaf627",
+          "strict_equals_operational": true,
+          "uncertain": true
+        },
+        {
+          "raw_id": 82,
+          "primary_is_strict": true,
+          "review_group_id": "v2_parent_neutralized:host:1b9dec4dfeaaf627",
+          "strict_equals_operational": false,
+          "uncertain": true
+        }
+      ]
+    },
+    {
+      "role": "guest",
+      "anchor_raw_id": 856,
+      "review_group_id": "v2_parent_neutralized:guest:1b53e3ca6107e76a",
+      "same_operational_key_members": [
+        {
+          "raw_id": 333,
+          "primary_is_strict": true,
+          "review_group_id": "v2_parent_neutralized:guest:1b53e3ca6107e76a",
+          "strict_equals_operational": false,
+          "uncertain": true
+        },
+        {
+          "raw_id": 812,
+          "primary_is_strict": true,
+          "review_group_id": "v2_parent_neutralized:guest:1b53e3ca6107e76a",
+          "strict_equals_operational": true,
+          "uncertain": true
+        },
+        {
+          "raw_id": 856,
+          "primary_is_strict": true,
+          "review_group_id": "v2_parent_neutralized:guest:1b53e3ca6107e76a",
+          "strict_equals_operational": false,
+          "uncertain": true
+        }
+      ]
+    }
+  ],
+  "review_group_id_linkage": {
+    "status": "COMPLETE_LITERAL_FROZEN_GROUP_REFERENCE_JOIN",
+    "member_count": 7,
+    "group_count": 3,
+    "evidence": "The v2 links join all seven members to the three uncertain frozen decisions; same-operational-key groups agree and every member retains its own strict key. No hash rule is inferred for review_group_id."
+  },
+  "canonical_to_parent_global_uniqueness_enforced": false,
+  "row_index_semantics": "zero-based physical clean_cond row index; never parquet_row",
+  "boundary": {
+    "opened_data_inputs": [
+      "additional_analyses/original_run/inputs/identity/canonical_membership.csv",
+      "additional_analyses/original_run/inputs/identity/parent_appearance_keys.csv",
+      "additional_analyses/original_run/inputs/identity/canonical_aliases.csv",
+      "additional_analyses/original_run/inputs/identity/parent_mapping.csv",
+      "additional_analyses/original_run/inputs/identity/parent_decisions.csv",
+      "additional_analyses/original_run/inputs/identity/uncertain_group_links_v2.csv"
+    ],
+    "opened_metadata_input": "additional_analyses/original_run/inputs/frozen_recipes.json",
+    "targets_opened": false,
+    "npz_opened": false,
+    "predictions_opened": false,
+    "outcome_tables_opened": false,
+    "reported_results_opened": false,
+    "chemical_reprocessing": false,
+    "target_validity_gate": "DEFERRED_TO_STAGE_B"
+  },
+  "self_test": {
+    "status": "PASS",
+    "or_deleted": [
+      1,
+      2,
+      3
+    ],
+    "random_seed": 100000,
+    "random_deleted_from_sorted_1_2_4_6_9": [
+      1,
+      9
+    ],
+    "zero_deleted": [],
+    "zero_parent_deleted": [],
+    "minimum_train_50_boundary": {
+      "49": 0,
+      "50": 1,
+      "51": 1
+    }
+  },
+  "output_rows": {
+    "train_masks.csv": 142980,
+    "block_map.csv": 12,
+    "block_arm_support.csv": 60
+  },
+  "parent_purge_zero_same_axis_parent_intersection_all_blocks": true,
+  "all_arms_minimum_train_50_pass": true,
+  "all_blocks_minimum_test_25_pass": true
+}

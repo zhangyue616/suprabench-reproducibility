@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "prediction_keys": 12012,
+  "metric_keys": 84,
+  "same_serialized_targets": true,
+  "scope": "twelve double-cold blocks and seven prespecified models"
+}

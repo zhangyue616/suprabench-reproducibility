@@ -1,0 +1,75 @@
+{
+  "rf_recipe": {
+    "n_estimators": 300,
+    "n_jobs": 1,
+    "random_state": 0,
+    "max_features": "sqrt"
+  },
+  "models": [
+    "PAIR_RF",
+    "sim_knn_k5",
+    "additive",
+    "host_only_RF",
+    "guest_only_RF",
+    "cond_only_RF",
+    "source_only_RF"
+  ],
+  "additional_fit_for_additive": false,
+  "sim_knn_k": 5,
+  "minimum_train_rows": 50,
+  "provenance": {
+    "sources": {
+      "canonical_features": {
+        "path": "data/canonical_cpu/features/tabular_features.npz",
+        "bytes": 30519868,
+        "sha256": "ffe6d344116e6a4ce36c0e90709666848f2319acd516c6fe2a54da47612d5310",
+        "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/canonical_cpu/features/tabular_features.npz",
+        "binding_method": "opaque streaming digest; content not parsed in Stage A"
+      },
+      "canonical_baseline_predictions": {
+        "path": "results/canonical_cpu/run_a/predictions_cpu.csv",
+        "bytes": 18462730,
+        "sha256": "5c5e72dc4b59219fb376c3c20b50534e3cbccb63d0c8603832f2d1baba691009",
+        "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/predictions_cpu.csv",
+        "binding_method": "opaque streaming digest; content not parsed in Stage A"
+      },
+      "canonical_baseline_metrics": {
+        "path": "results/canonical_cpu/run_a/metrics_cpu.tsv",
+        "bytes": 44151,
+        "sha256": "54cd2d409b930d4cb40bca83fa98e02fb1ed24c1b9225ea1679cb1d9a2e8b82b",
+        "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/metrics_cpu.tsv",
+        "binding_method": "opaque streaming digest; content not parsed in Stage A"
+      },
+      "e1_train_masks": {
+        "path": "additional_analyses/original_run/masks/train_masks.csv",
+        "bytes": 60891571,
+        "sha256": "f791389fcdb03ddc116a72467bf5f3cc322dc819ff3458cacc2c1ca5f44b4256"
+      },
+      "e1_block_map": {
+        "path": "additional_analyses/original_run/masks/block_map.csv",
+        "bytes": 335,
+        "sha256": "cc1e6d2f1290512103a01bf23275b32fd5dcdf274d3f8d67247cc93b397041e1"
+      }
+    },
+    "contract_path": "additional_analyses/original_run/analysis_contract.json",
+    "freeze_receipt_path": "additional_analyses/original_run/stage_a_freeze.json",
+    "feature_dtypes": {
+      "row_index": "int64",
+      "y": "float32",
+      "y_true_serialized": "<U19",
+      "row_host_id": "int64",
+      "row_guest_id": "int64",
+      "host_index": "int64",
+      "guest_index": "int64",
+      "X_pair": "float32",
+      "X_host": "float32",
+      "X_guest": "float32",
+      "X_condition": "float32",
+      "X_source": "float32",
+      "HostSim": "float32",
+      "GuestSim": "float32"
+    },
+    "train_indexing": "original sorted Python integer lists; model inputs retain stored array dtypes",
+    "standard_auxiliary": "same six nulls, standard R2 allows constant prediction; no additional mean predictor"
+  }
+}

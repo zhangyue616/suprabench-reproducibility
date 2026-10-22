@@ -1,0 +1,70 @@
+{
+  "block_id": "double_cold/seed_11",
+  "status": "PASS",
+  "comparison_rule": "finite numeric roundtrip: abs(new-old) <= 8*ulp(old); no tolerance widening",
+  "models": {
+    "PAIR_RF": {
+      "status": "PASS",
+      "max_absolute_prediction_difference": 0.0,
+      "prediction_mismatches": [],
+      "metric_mismatches": [],
+      "same_target": true,
+      "target_comparison_source": "frozen y_true_serialized against canonical prediction CSV",
+      "scoring_target_source": "original stored feature y dtype"
+    },
+    "sim_knn_k5": {
+      "status": "PASS",
+      "max_absolute_prediction_difference": 0.0,
+      "prediction_mismatches": [],
+      "metric_mismatches": [],
+      "same_target": true,
+      "target_comparison_source": "frozen y_true_serialized against canonical prediction CSV",
+      "scoring_target_source": "original stored feature y dtype"
+    },
+    "additive": {
+      "status": "PASS",
+      "max_absolute_prediction_difference": 0.0,
+      "prediction_mismatches": [],
+      "metric_mismatches": [],
+      "same_target": true,
+      "target_comparison_source": "frozen y_true_serialized against canonical prediction CSV",
+      "scoring_target_source": "original stored feature y dtype"
+    },
+    "host_only_RF": {
+      "status": "PASS",
+      "max_absolute_prediction_difference": 0.0,
+      "prediction_mismatches": [],
+      "metric_mismatches": [],
+      "same_target": true,
+      "target_comparison_source": "frozen y_true_serialized against canonical prediction CSV",
+      "scoring_target_source": "original stored feature y dtype"
+    },
+    "guest_only_RF": {
+      "status": "PASS",
+      "max_absolute_prediction_difference": 0.0,
+      "prediction_mismatches": [],
+      "metric_mismatches": [],
+      "same_target": true,
+      "target_comparison_source": "frozen y_true_serialized against canonical prediction CSV",
+      "scoring_target_source": "original stored feature y dtype"
+    },
+    "cond_only_RF": {
+      "status": "PASS",
+      "max_absolute_prediction_difference": 0.0,
+      "prediction_mismatches": [],
+      "metric_mismatches": [],
+      "same_target": true,
+      "target_comparison_source": "frozen y_true_serialized against canonical prediction CSV",
+      "scoring_target_source": "original stored feature y dtype"
+    },
+    "source_only_RF": {
+      "status": "PASS",
+      "max_absolute_prediction_difference": 0.0,
+      "prediction_mismatches": [],
+      "metric_mismatches": [],
+      "same_target": true,
+      "target_comparison_source": "frozen y_true_serialized against canonical prediction CSV",
+      "scoring_target_source": "original stored feature y dtype"
+    }
+  }
+}

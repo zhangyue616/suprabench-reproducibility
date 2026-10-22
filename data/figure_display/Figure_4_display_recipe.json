@@ -1,0 +1,13 @@
+{
+  "panel_c_positive_blocks_per_seed": {
+    "PAIR_RF": "10–11/12",
+    "ECFP_RF": "9/12",
+    "XGB_pair": "7–10/12",
+    "XGB_ecfp": "7–8/12",
+    "LGBM_pair": "10/12",
+    "LGBM_ecfp": "5–7/12",
+    "3D_pair_RF": "8–9/12",
+    "GINE": "4–8/12",
+    "AttentiveFP": "5–9/12"
+  }
+}

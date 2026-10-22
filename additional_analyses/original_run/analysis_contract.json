@@ -1,0 +1,243 @@
+{
+  "schema_version": "e1e2-analysis-contract-v1",
+  "experiment_root": ".",
+  "stage": "A_FROZEN_BEFORE_STAGE_B",
+  "decision_path": "not_redistributed:scientific-decision-record",
+  "scientific_snapshot": {
+    "commit": "81b1d092b4d2bdd4a4f293f340e7d369395ac053",
+    "zip": "suprabench-cold-split-audit_81b1d092b4d2bdd4a4f293f340e7d369395ac053.zip",
+    "verification_scope": "only actual source members; no whole-archive rehash"
+  },
+  "sources": {
+    "canonical_features": {
+      "path": "data/canonical_cpu/features/tabular_features.npz",
+      "bytes": 30519868,
+      "sha256": "ffe6d344116e6a4ce36c0e90709666848f2319acd516c6fe2a54da47612d5310",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/canonical_cpu/features/tabular_features.npz",
+      "binding_method": "opaque streaming digest; content not parsed in Stage A"
+    },
+    "canonical_baseline_predictions": {
+      "path": "results/canonical_cpu/run_a/predictions_cpu.csv",
+      "bytes": 18462730,
+      "sha256": "5c5e72dc4b59219fb376c3c20b50534e3cbccb63d0c8603832f2d1baba691009",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/predictions_cpu.csv",
+      "binding_method": "opaque streaming digest; content not parsed in Stage A"
+    },
+    "canonical_baseline_metrics": {
+      "path": "results/canonical_cpu/run_a/metrics_cpu.tsv",
+      "bytes": 44151,
+      "sha256": "54cd2d409b930d4cb40bca83fa98e02fb1ed24c1b9225ea1679cb1d9a2e8b82b",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/results/canonical_cpu/run_a/metrics_cpu.tsv",
+      "binding_method": "opaque streaming digest; content not parsed in Stage A"
+    },
+    "family_membership": {
+      "path": "data/folds/folds_family_cold.csv",
+      "bytes": 197140,
+      "sha256": "12c99d8df84e238c603d22b68536ba88e30a00f1f05d0dda4f2de24c51040e02",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/folds/folds_family_cold.csv",
+      "binding_method": "opaque streaming digest; content not parsed in Stage A"
+    },
+    "family_predictions": {
+      "path": "data/released_predictions/predictions_family_cold.csv",
+      "bytes": 2527320,
+      "sha256": "f982b2cbb9aacf3bffc82ed844d2e1e34f36a5549e8bc834f5de94bb86b66b63",
+      "archive_member": "suprabench-cold-split-audit-81b1d092b4d2bdd4a4f293f340e7d369395ac053/data/released_predictions/predictions_family_cold.csv",
+      "binding_method": "opaque streaming digest; content not parsed in Stage A"
+    },
+    "e1_train_masks": {
+      "path": "masks/train_masks.csv",
+      "bytes": 60891571,
+      "sha256": "f791389fcdb03ddc116a72467bf5f3cc322dc819ff3458cacc2c1ca5f44b4256"
+    },
+    "e1_block_map": {
+      "path": "masks/block_map.csv",
+      "bytes": 335,
+      "sha256": "cc1e6d2f1290512103a01bf23275b32fd5dcdf274d3f8d67247cc93b397041e1"
+    },
+    "e1_block_arm_support": {
+      "path": "masks/block_arm_support.csv",
+      "bytes": 9822,
+      "sha256": "4af17619c34b288b5ed9127756697f69aa774233fa7c20dd4967b8c333057c9f"
+    }
+  },
+  "identity_sources_receipt": "not_redistributed:inputs/projection_receipt.json",
+  "canonical_formula_sources": {
+    "run_external_fold_models.py": {
+      "path": "historical-source-not-redistributed/run_external_fold_models.py",
+      "bytes": 28756,
+      "sha256": "ab1795bcfa4d01ba2e615db0b276e19a9b185cfed53855f35208efaf014a1074",
+      "role": "static source reference; never imported by the new runner"
+    },
+    "common.py": {
+      "path": "historical-source-not-redistributed/common.py",
+      "bytes": 6074,
+      "sha256": "ec9de6fd05c7481f8f84e5aa59aa5fc7575ebbc5c1d99e85b6e7e01949087883",
+      "role": "static source reference; never imported by the new runner"
+    }
+  },
+  "execution": {
+    "interpreter": "python",
+    "reused_environment_preflight": {
+      "python": "3.11.15",
+      "numpy": "1.26.4",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "sklearn": "1.9.0",
+      "rdkit": "2026.03.3"
+    },
+    "order": [
+      "E2",
+      "E1"
+    ],
+    "device": "CPU",
+    "thread_environment": {
+      "BLIS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "results_policy": "new absolute child directory of experiment_root/results; reject existing path",
+    "restart_policy": "no automatic resume/refit; retain failed evidence",
+    "preflight_fit": false,
+    "separate_stage_b_run_required": true
+  },
+  "e1": {
+    "identity_layer": "v2_reviewed_only_parent",
+    "uncertain_groups": "three frozen groups; seven members retain member-specific strict keys",
+    "uncertain_link_authority": "inputs/identity/uncertain_group_links_v2.csv",
+    "canonical_to_parent_global_uniqueness_required": false,
+    "row_index": "zero-based physical clean_cond row, never parquet_row",
+    "n_blocks": 12,
+    "n_original_rows_per_block": 2383,
+    "test_appearances_per_arm": 1716,
+    "block_order": "numeric (seed,fold_index), b=0..11; canonical block_id=double_cold/seed_{fold_index}; fold_index=seed",
+    "membership": "fixed original train/test/neither from canonical membership; no rebuilding or test exclusion",
+    "arms": [
+      "baseline",
+      "parent_purge",
+      "random_purge_0",
+      "random_purge_1",
+      "random_purge_2"
+    ],
+    "models": [
+      "PAIR_RF",
+      "sim_knn_k5",
+      "additive",
+      "host_only_RF",
+      "guest_only_RF",
+      "cond_only_RF",
+      "source_only_RF"
+    ],
+    "nulls": [
+      "sim_knn_k5",
+      "additive",
+      "host_only_RF",
+      "guest_only_RF",
+      "cond_only_RF",
+      "source_only_RF"
+    ],
+    "parent_deletion": "delete original train if its host parent is in test host parents OR guest parent is in test guest parents",
+    "random_deletion": {
+      "rng": "numpy.random.RandomState",
+      "seed_formula": "100000+100*b+j",
+      "j": [
+        0,
+        1,
+        2
+      ],
+      "population": "sorted original train row_index",
+      "size": "exact number removed by same-block parent purge",
+      "replace": false,
+      "training_order": "sorted retained row_index"
+    },
+    "minimum_train_rows": 50,
+    "minimum_test_rows": 25,
+    "minimum_distinct_finite_test_targets": 2,
+    "target_gate": "check at Stage B, after frozen masks; no drop or replacement of invalid blocks",
+    "rf_recipe": {
+      "n_estimators": 300,
+      "n_jobs": 1,
+      "random_state": 0,
+      "max_features": "sqrt"
+    },
+    "maximum_rf_fits": 300,
+    "actual_planned_rf_fits": 300,
+    "rf_models": [
+      "PAIR_RF",
+      "host_only_RF",
+      "guest_only_RF",
+      "cond_only_RF",
+      "source_only_RF"
+    ],
+    "additive": {
+      "formula": "host_only_RF + guest_only_RF - mean(y_train)",
+      "additional_fit": false
+    },
+    "sim_knn_k5": {
+      "k": 5,
+      "combined_similarity": "(host_tanimoto + guest_tanimoto) / 2",
+      "neighbor_selection": "numpy.argpartition(-combined, min(k, len(combined)-1))[:k]",
+      "weight": "combined_similarity + 1e-6"
+    },
+    "input_precision": "retain original NPZ array dtypes and original scoring target dtype; no implicit casts",
+    "all_nulls_refit_or_recomputed": "own arm training rows, own additive mean and own k5 library; never use saved null scores",
+    "guarded_r2": "target has at least two distinct values and prediction std > 1e-9; finite r2 required",
+    "best_null": "maximum finite eligible guarded R2 among exactly the same six nulls; no eligible null means undefined",
+    "standard_auxiliary": "standard R2 including constant predictions, same six nulls; no extra mean-prediction model",
+    "margin": "PAIR_RF R2 minus same-arm best-null R2",
+    "aggregate": "all 12 blocks equal weight; any undefined block makes the corresponding arm mean undefined",
+    "primary_contrast": "parent-purge equal-block margin mean minus mean of three random-purge equal-block margin means",
+    "secondary_contrast": "parent-purge equal-block margin mean minus baseline equal-block margin mean",
+    "baseline_check": "all original baseline blocks before intervention fits; exact keys and saved target strings, finite numeric differences <= 8*ulp(reference); unexplained mismatch stops E1",
+    "report": "all blocks/arms, absolute RF and six-null metrics, MAE, guarded/standard margins, deletion share and remaining exposure; first formal block time and process peak memory",
+    "inference": "descriptive; no p value/CI; overlapping blocks and random masks are not independent chemical replicates"
+  },
+  "e2": {
+    "models": [
+      "PAIR_RF",
+      "guest_only_RF"
+    ],
+    "expected_records": 352,
+    "expected_hosts": 21,
+    "membership_selection": {
+      "split": "family_cold",
+      "held_family": "cyclodextrin",
+      "role": "test"
+    },
+    "panel": "all membership-selected records; require one prediction per model per row, aligned raw host/guest and target",
+    "target_matching": "exact float64 equality or exact source float32 round trip, no broad tolerance",
+    "target_source": "family_membership.y",
+    "rank_definition": "average-tie global ranks for each target and prediction vector on all 352 records",
+    "denominator": "sqrt(sum((global_y_rank-mean)^2)*sum((global_pred_rank-mean)^2))",
+    "between": "sum_h n_h*(mean_global_y_rank_h-mean_global_y_rank)*(mean_global_pred_rank_h-mean_global_pred_rank)/denominator",
+    "within": "sum_h sum_i_in_h (global_y_rank_i-mean_global_y_rank_h)*(global_pred_rank_i-mean_global_pred_rank_h)/denominator",
+    "check": "between+within equals pooled Spearman and separately scipy.stats.spearmanr",
+    "primary_contrast": "PAIR_RF signed within contribution minus guest_only_RF signed within contribution",
+    "host_min_distinct_guests": 5,
+    "secondary_eligibility": "at least five distinct raw guests and both host-local Spearman values defined",
+    "secondary_weight": "eligible raw hosts equally weighted, paired model rho difference",
+    "support_table": "all 21 hosts including ineligible, distinct guest counts, ties, constant predictions/targets and undefined reasons",
+    "no_fit": true,
+    "no_inference": "no p values/CI; test-host centering is a decomposition, not calibration"
+  },
+  "prohibitions": [
+    "no GPU/GNN",
+    "no hyperparameter search",
+    "no rule/seed adjustment from outcomes",
+    "no MSE decomposition, pair averaging or 17-model scan",
+    "no edits to the fixed snapshot or historical files",
+    "no dependency installation"
+  ],
+  "no_study_wide_blinding_claim": true,
+  "post_freeze_bug_policy": "retain prior code and reason, targeted repair only; frozen masks/rules may not be silently changed",
+  "public_path_binding": {
+    "schema": "suprabench-public-paths-v1",
+    "experiment_root_base": "original_run",
+    "companion_root_from_original_run": "..",
+    "repository_root_from_original_run": "../..",
+    "source_location_authority": "../input_sources/SOURCE_BINDINGS.json: scope + relative_path",
+    "source_path_semantics": "path is relative to its declared scope root; the adapter resolves it at runtime",
+    "historical_static_sources": "not redistributed; never imported by the E1/E2 runners"
+  }
+}

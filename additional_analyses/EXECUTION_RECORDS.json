@@ -1,0 +1,86 @@
+{
+  "evidence_class": "FIELD_PROJECTION_OF_HISTORICAL_EXECUTION_RECORDS",
+  "executions": [
+    {
+      "status": "PROCESS_EXITED",
+      "experiment": "e1",
+      "process_alive": false,
+      "started_utc": "2026-10-10T04:45:49.169802+00:00",
+      "finished_utc": "2026-10-10T04:47:34.216777+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 105.04699999999866,
+      "stdout_bytes": 0,
+      "stderr_bytes": 0,
+      "thread_environment": {
+        "BLIS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "original_command_argv_redacted": [
+        "[PYTHON_EXECUTABLE]",
+        "-B",
+        "[LOCAL_PATH_REDACTED]/e1_parent_purge_runner.py",
+        "--contract",
+        "[LOCAL_PATH_REDACTED]/analysis_contract.json",
+        "--freeze-receipt",
+        "[LOCAL_PATH_REDACTED]/stage_a_freeze.json",
+        "--output-dir",
+        "[LOCAL_PATH_REDACTED]/e1_run_01",
+        "--features-npz",
+        "[LOCAL_PATH_REDACTED]/tabular_features.npz",
+        "--masks",
+        "[LOCAL_PATH_REDACTED]/train_masks.csv",
+        "--block-map",
+        "[LOCAL_PATH_REDACTED]/block_map.csv",
+        "--baseline-predictions",
+        "[LOCAL_PATH_REDACTED]/predictions_cpu.csv",
+        "--baseline-metrics",
+        "[LOCAL_PATH_REDACTED]/metrics_cpu.tsv"
+      ],
+      "public_saved_output": "original_run/results/e1_run_01/",
+      "command_scope": "Historical invocation with local paths redacted; not a new execution or a runnable public command."
+    },
+    {
+      "status": "PROCESS_EXITED",
+      "experiment": "e2",
+      "process_alive": false,
+      "started_utc": "2026-10-10T04:45:38.808302+00:00",
+      "finished_utc": "2026-10-10T04:45:40.816318+00:00",
+      "exit_code": 0,
+      "elapsed_seconds": 2.0,
+      "stdout_bytes": 193,
+      "stderr_bytes": 0,
+      "thread_environment": {
+        "BLIS_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "original_command_argv_redacted": [
+        "[PYTHON_EXECUTABLE]",
+        "-B",
+        "[LOCAL_PATH_REDACTED]/e2_rank_diagnostic.py",
+        "--contract",
+        "[LOCAL_PATH_REDACTED]/analysis_contract.json",
+        "--freeze-receipt",
+        "[LOCAL_PATH_REDACTED]/stage_a_freeze.json",
+        "--output-dir",
+        "[LOCAL_PATH_REDACTED]/e2_run_01",
+        "--membership-csv",
+        "[LOCAL_PATH_REDACTED]/folds_family_cold.csv",
+        "--predictions-csv",
+        "[LOCAL_PATH_REDACTED]/predictions_family_cold.csv"
+      ],
+      "public_saved_output": "original_run/results/e2_run_01/",
+      "command_scope": "Historical invocation with local paths redacted; not a new execution or a runnable public command."
+    }
+  ],
+  "limitations": [
+    "No model was trained or analysis rerun for this public export.",
+    "Fit-completion records and prediction tables are computational records, not per-iteration model trajectories.",
+    "Empty stdout/stderr files are reported as empty. Local process IDs, working directories, output and log paths, and other run-management fields are omitted."
+  ]
+}

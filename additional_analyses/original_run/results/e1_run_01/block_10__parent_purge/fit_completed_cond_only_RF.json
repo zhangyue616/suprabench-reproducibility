@@ -1,0 +1,7 @@
+{
+  "status": "FIT_COMPLETED",
+  "model": "cond_only_RF",
+  "job_rf_fits_completed": 4,
+  "total_rf_fits_completed": 114,
+  "total_rf_fits_attempted": 114
+}

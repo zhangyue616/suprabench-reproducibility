@@ -1,0 +1,80 @@
+{
+  "status": "E2_COMPLETED",
+  "primary_panel": "all membership-selected family_cold/cyclodextrin/test records",
+  "target_source": "family_membership.y",
+  "rank_method": "global average-tie ranks for each full-panel target/prediction vector",
+  "n_records": 352,
+  "n_raw_hosts": 21,
+  "models": [
+    "PAIR_RF",
+    "guest_only_RF"
+  ],
+  "signed_decomposition": {
+    "PAIR_RF": {
+      "n_records": 352,
+      "n_hosts": 21,
+      "defined": true,
+      "undefined_reason": null,
+      "rank_denominator": 3634461.9999669483,
+      "between": 0.20596083228835282,
+      "within": 0.3125234715830693,
+      "total": 0.5184843038714222,
+      "scipy_spearman": 0.5184843038714222,
+      "decomposition_residual": 0.0,
+      "scipy_check_abs_error": 0.0
+    },
+    "guest_only_RF": {
+      "n_records": 352,
+      "n_hosts": 21,
+      "defined": true,
+      "undefined_reason": null,
+      "rank_denominator": 3634393.499029274,
+      "between": 0.15046154128209124,
+      "within": 0.32094758116367833,
+      "total": 0.4714091224457696,
+      "scipy_spearman": 0.4714091224457696,
+      "decomposition_residual": 0.0,
+      "scipy_check_abs_error": 0.0
+    }
+  },
+  "PAIR_RF_minus_guest_only_RF_within": -0.008424109580609018,
+  "within_difference_undefined_reason": null,
+  "secondary_host_support": {
+    "n_all_hosts": 21,
+    "n_eligible_hosts": 9,
+    "n_ineligible_hosts": 12,
+    "eligibility": "at least 5 distinct raw guests and both local rho values defined",
+    "weighting": "equal weight per eligible raw host",
+    "eligible_equal_host_mean_rho": {
+      "PAIR_RF": 0.047037672650366485,
+      "guest_only_RF": -0.05867187517109648
+    },
+    "eligible_equal_host_mean_paired_difference": 0.10570954782146297,
+    "mean_undefined_reason": null
+  },
+  "numerical_check_absolute_tolerance": 1.4210854715202004e-14,
+  "inputs": {
+    "family_membership": {
+      "path": "data/folds/folds_family_cold.csv",
+      "sha256": "12c99d8df84e238c603d22b68536ba88e30a00f1f05d0dda4f2de24c51040e02",
+      "bytes": 197140
+    },
+    "family_predictions": {
+      "path": "data/released_predictions/predictions_family_cold.csv",
+      "sha256": "f982b2cbb9aacf3bffc82ed844d2e1e34f36a5549e8bc834f5de94bb86b66b63",
+      "bytes": 2527320
+    }
+  },
+  "contract_path": "additional_analyses/original_run/analysis_contract.json",
+  "freeze_receipt_path": "additional_analyses/original_run/stage_a_freeze.json",
+  "target_match_counts": {
+    "PAIR_RF": {
+      "membership_float32_roundtrip": 348,
+      "exact_float64": 4
+    },
+    "guest_only_RF": {
+      "membership_float32_roundtrip": 348,
+      "exact_float64": 4
+    }
+  }
+}

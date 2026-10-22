@@ -1,0 +1,95 @@
+{
+  "status": "COMPLETE",
+  "n_blocks": 12,
+  "weighting": "twelve blocks equally weighted; random arms are matched controls, not independent blocks",
+  "arms": {
+    "baseline": {
+      "guarded_margin_equal_block_mean": {
+        "value": 0.11983703032349653,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      },
+      "standard_margin_equal_block_mean": {
+        "value": 0.11710953444023083,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      }
+    },
+    "parent_purge": {
+      "guarded_margin_equal_block_mean": {
+        "value": 0.1177757176630978,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      },
+      "standard_margin_equal_block_mean": {
+        "value": 0.11480882298586197,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      }
+    },
+    "random_purge_0": {
+      "guarded_margin_equal_block_mean": {
+        "value": 0.12993739524460282,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      },
+      "standard_margin_equal_block_mean": {
+        "value": 0.1276256455990031,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      }
+    },
+    "random_purge_1": {
+      "guarded_margin_equal_block_mean": {
+        "value": 0.12439299705863398,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      },
+      "standard_margin_equal_block_mean": {
+        "value": 0.12104985150830068,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      }
+    },
+    "random_purge_2": {
+      "guarded_margin_equal_block_mean": {
+        "value": 0.12742307220434743,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      },
+      "standard_margin_equal_block_mean": {
+        "value": 0.12421340444870388,
+        "status": "DEFINED",
+        "undefined_blocks": [],
+        "denominator_blocks": 12
+      }
+    }
+  },
+  "guarded_primary_parent_minus_random": {
+    "value": -0.009475437172763584,
+    "status": "DEFINED",
+    "formula": "parent_purge equal-block margin mean minus mean of three random-purge equal-block margin means"
+  },
+  "guarded_secondary_parent_minus_baseline": {
+    "value": -0.0020613126603987314,
+    "status": "DEFINED"
+  },
+  "standard_primary_parent_minus_random": {
+    "value": -0.009487477532807265,
+    "status": "DEFINED",
+    "formula": "parent_purge equal-block margin mean minus mean of three random-purge equal-block margin means"
+  },
+  "standard_secondary_parent_minus_baseline": {
+    "value": -0.002300711454368859,
+    "status": "DEFINED"
+  }
+}

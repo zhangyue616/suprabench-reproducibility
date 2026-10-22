@@ -1,0 +1,7 @@
+# Display rendering only; separate from scientific verification/training.
+# Numerical renderer versions observed in the retained Python 3.11 environment.
+# The renderer does not require svglib, reportlab or pypdfium2.
+numpy==1.26.4
+pandas==3.0.3
+matplotlib==3.11.0
+Pillow==12.2.0

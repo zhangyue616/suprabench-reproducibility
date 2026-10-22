@@ -1,0 +1,381 @@
+{
+  "schema": "suprabench-public-export-verification-v2",
+  "release": "v1.0.0",
+  "status": "PASS",
+  "started_utc": "2026-10-22T06:07:26.922556+00:00",
+  "ended_utc": "2026-10-22T06:07:59.281336+00:00",
+  "elapsed_seconds": 32.359,
+  "exit_code": 0,
+  "platform": {
+    "system": "Windows",
+    "release": "10",
+    "version": "10.0.26200",
+    "machine": "AMD64"
+  },
+  "environment": {
+    "status": "PASS",
+    "observed": {
+      "python": "3.11.15",
+      "numpy": "1.26.4",
+      "pandas": "3.0.3",
+      "scipy": "1.17.1",
+      "sklearn": "1.9.0",
+      "rdkit": "2026.03.3"
+    }
+  },
+  "method": "Tracked files of the v1.0.0 tree were copied into a separate directory and the default command was invoked from a different working directory. The verification entrypoints use no network access.",
+  "command": [
+    "python",
+    "-I",
+    "[SEPARATE_COPY]/verify.py"
+  ],
+  "working_directory": "[SEPARATE_WORKING_DIRECTORY]",
+  "verified_tree": {
+    "tracked_files": 2895,
+    "digest_files": 2893,
+    "sha256_of_sorted_path_sha256_list": "a386a618eb3a7dec133ff62587b1bb3ec2dcdd4887cd0d357ae45b546a3b15b3",
+    "excluded_from_digest": [
+      "FILE_LICENSES.tsv",
+      "PUBLIC_EXPORT_MANIFEST.tsv",
+      "validation/SAVED_RESULTS_VERIFICATION.json"
+    ],
+    "note": "Digest of the sorted 'path<TAB>sha256<LF>' lines of all tracked files except those listed. FILE_LICENSES.tsv and PUBLIC_EXPORT_MANIFEST.tsv are present during the run and index this receipt; PUBLIC_EXPORT_MANIFEST.tsv records the receipt's SHA-256 and is therefore updated afterwards; the verification command reads neither file. tracked_files counts the files present during the run and excludes this receipt."
+  },
+  "checks": [
+    {
+      "check": "core_saved_results",
+      "exit_code": 0,
+      "elapsed_seconds": 27.375
+    },
+    {
+      "check": "additional_saved_inspection",
+      "exit_code": 0,
+      "elapsed_seconds": 0.5
+    },
+    {
+      "check": "e1_saved_rescore",
+      "exit_code": 0,
+      "elapsed_seconds": 4.39
+    }
+  ],
+  "core_summary": {
+    "total": 4,
+    "passed": 4,
+    "failed": 0
+  },
+  "core_science_groups": [
+    {
+      "check_id": "canonical_cpu_saved",
+      "status": "PASS",
+      "details": {
+        "predictions_per_run": 84266,
+        "metrics_per_run": 325,
+        "similarity_per_run": 6482,
+        "feature_artifacts": 4,
+        "audit_projection_rows": 39,
+        "ab_byte_identical_artifacts": 3
+      },
+      "saved_prediction_rescore": {
+        "status": "PASS",
+        "prediction_rows": 84266,
+        "metric_rows": 325,
+        "defined_r2_rows": 308,
+        "pooled_pair_rf": [
+          {
+            "split": "host_cold",
+            "block_id": "ALL_EVALUATION_APPEARANCES",
+            "best_null": "additive",
+            "model_r2": 0.44188316279851125,
+            "best_null_r2": 0.23608089717112357,
+            "delta_r2": 0.20580226562738768,
+            "null_r2": {
+              "sim_knn_k5": 0.21411231520507124,
+              "additive": 0.23608089717112357,
+              "host_only_RF": 0.20593826758652578,
+              "guest_only_RF": 0.22686164039829926,
+              "cond_only_RF": -0.08394358891791676,
+              "source_only_RF": -0.07165558881537737
+            }
+          },
+          {
+            "split": "guest_cold",
+            "block_id": "ALL_EVALUATION_APPEARANCES",
+            "best_null": "sim_knn_k5",
+            "model_r2": 0.6460302172706822,
+            "best_null_r2": 0.536488565619055,
+            "delta_r2": 0.10954165165162721,
+            "null_r2": {
+              "sim_knn_k5": 0.536488565619055,
+              "additive": 0.33463370423433814,
+              "host_only_RF": 0.4178166937064878,
+              "guest_only_RF": 0.31521909405403037,
+              "cond_only_RF": 0.13024778276314797,
+              "source_only_RF": 0.08096787992979826
+            }
+          },
+          {
+            "split": "double_cold",
+            "block_id": "ALL_EVALUATION_APPEARANCES",
+            "best_null": "guest_only_RF",
+            "model_r2": 0.37968624975862153,
+            "best_null_r2": 0.15987396598321535,
+            "delta_r2": 0.21981228377540618,
+            "null_r2": {
+              "sim_knn_k5": 0.0444798530421755,
+              "additive": 0.15232926548835146,
+              "host_only_RF": 0.1355771461677746,
+              "guest_only_RF": 0.15987396598321535,
+              "cond_only_RF": -0.020851844906564887,
+              "source_only_RF": -0.02230621999287319
+            }
+          }
+        ],
+        "double_cold_summaries": [
+          {
+            "split": "double_cold",
+            "aggregation": "equal_block_mean",
+            "model_r2": 0.33185207434609554,
+            "best_null_r2": 0.21201504402259896,
+            "delta_r2": 0.11983703032349653,
+            "best_null": "PER_BLOCK_MAX_OF_FINITE_SIX",
+            "positive_blocks": 10,
+            "total_blocks": 12
+          },
+          {
+            "split": "double_cold",
+            "aggregation": "appearance_weighted_mean",
+            "model_r2": 0.33841014158586025,
+            "best_null_r2": 0.2276201192353586,
+            "delta_r2": 0.11079002235050157,
+            "best_null": "PER_BLOCK_MAX_OF_FINITE_SIX",
+            "positive_blocks": 10,
+            "total_blocks": 12
+          }
+        ]
+      }
+    },
+    {
+      "check_id": "gnn_saved_reaggregation",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "completed_jobs": 350,
+        "expected_jobs": 350,
+        "prediction_appearances": 115160,
+        "per_seed_rows": 40,
+        "across_seed_rows": 30,
+        "family_rows": 80,
+        "runner_sha_counts": {
+          "374d508fd849e5039fc734b89e743b7c452f3f8bb401afe88f17cf8f90253cfb": 1,
+          "67662a199ed759f72ceb4277f7014091f1f881750628130bbdcf17e9e665094d": 349
+        },
+        "historical_comparisons": {
+          "job_metrics.csv": {
+            "rows": 350,
+            "columns": 27,
+            "numeric_cells_checked": 6300,
+            "categorical_cells_checked": 3150
+          },
+          "per_seed_metrics.csv": {
+            "rows": 40,
+            "columns": 14,
+            "numeric_cells_checked": 480,
+            "categorical_cells_checked": 80
+          },
+          "across_seed_descriptive.csv": {
+            "rows": 30,
+            "columns": 8,
+            "numeric_cells_checked": 150,
+            "categorical_cells_checked": 90
+          },
+          "family_across_seed_descriptive.csv": {
+            "rows": 80,
+            "columns": 9,
+            "numeric_cells_checked": 400,
+            "categorical_cells_checked": 320
+          },
+          "double_cold_120_block_records.csv": {
+            "rows": 120,
+            "columns": 27,
+            "numeric_cells_checked": 2280,
+            "categorical_cells_checked": 960
+          }
+        }
+      }
+    },
+    {
+      "check_id": "tree_saved_reaggregation",
+      "status": "PASS",
+      "details": {
+        "status": "PASS",
+        "completed_jobs": 420,
+        "prediction_appearances": 69440,
+        "measurement_rows": 2383,
+        "model_seed_summaries": 35,
+        "block_records": 420,
+        "historical_comparisons": {
+          "block_metrics.csv": {
+            "rows": 420,
+            "columns": 25,
+            "numeric_cells_checked": 6300,
+            "categorical_cells_checked": 4200
+          },
+          "per_seed_metrics.csv": {
+            "rows": 35,
+            "columns": 9,
+            "numeric_cells_checked": 280,
+            "categorical_cells_checked": 35
+          },
+          "across_seed_descriptive.csv": {
+            "rows": 28,
+            "columns": 7,
+            "numeric_cells_checked": 140,
+            "categorical_cells_checked": 56
+          },
+          "historical_seed0_comparison.csv": {
+            "rows": 84,
+            "columns": 7,
+            "numeric_cells_checked": 504,
+            "categorical_cells_checked": 84
+          }
+        }
+      }
+    },
+    {
+      "check_id": "parent_identity_b1_saved_replay",
+      "status": "PASS",
+      "details": {
+        "status": "COMPLETED",
+        "primary_rows": 48,
+        "baseline_checks": 206,
+        "final_results_comparison": {
+          "rows": 48,
+          "numeric_cells_checked": 424,
+          "categorical_cells_checked": 488
+        }
+      }
+    }
+  ],
+  "additional_saved_inspection": {
+    "status": "SAVED_OUTPUT_ACCESS_PASS",
+    "e1_completion_record": {
+      "status": "COMPLETED",
+      "completed_jobs": 60,
+      "actual_rf_fits_completed": 300
+    }
+  },
+  "e1_saved_rescore": {
+    "status": "PASS",
+    "jobs": 60,
+    "models_per_job": 7,
+    "prediction_rows": 60060,
+    "comparison_rule": "finite numeric abs(actual-expected) <= 8*ulp(expected); exact identities, statuses and literal target strings",
+    "comparison_counts": {
+      "numeric_cells": 4225,
+      "exact_cells": 7218,
+      "max_absolute_difference": 0.0
+    },
+    "summary": {
+      "status": "COMPLETE",
+      "n_blocks": 12,
+      "weighting": "twelve blocks equally weighted; random arms are matched controls, not independent blocks",
+      "arms": {
+        "baseline": {
+          "guarded_margin_equal_block_mean": {
+            "value": 0.11983703032349653,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          },
+          "standard_margin_equal_block_mean": {
+            "value": 0.11710953444023083,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          }
+        },
+        "parent_purge": {
+          "guarded_margin_equal_block_mean": {
+            "value": 0.1177757176630978,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          },
+          "standard_margin_equal_block_mean": {
+            "value": 0.11480882298586197,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          }
+        },
+        "random_purge_0": {
+          "guarded_margin_equal_block_mean": {
+            "value": 0.12993739524460282,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          },
+          "standard_margin_equal_block_mean": {
+            "value": 0.1276256455990031,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          }
+        },
+        "random_purge_1": {
+          "guarded_margin_equal_block_mean": {
+            "value": 0.12439299705863398,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          },
+          "standard_margin_equal_block_mean": {
+            "value": 0.12104985150830068,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          }
+        },
+        "random_purge_2": {
+          "guarded_margin_equal_block_mean": {
+            "value": 0.12742307220434743,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          },
+          "standard_margin_equal_block_mean": {
+            "value": 0.12421340444870388,
+            "status": "DEFINED",
+            "undefined_blocks": [],
+            "denominator_blocks": 12
+          }
+        }
+      },
+      "guarded_primary_parent_minus_random": {
+        "value": -0.009475437172763584,
+        "status": "DEFINED",
+        "formula": "parent_purge equal-block margin mean minus mean of three random-purge equal-block margin means"
+      },
+      "guarded_secondary_parent_minus_baseline": {
+        "value": -0.0020613126603987314,
+        "status": "DEFINED"
+      },
+      "standard_primary_parent_minus_random": {
+        "value": -0.009487477532807265,
+        "status": "DEFINED",
+        "formula": "parent_purge equal-block margin mean minus mean of three random-purge equal-block margin means"
+      },
+      "standard_secondary_parent_minus_baseline": {
+        "value": -0.002300711454368859,
+        "status": "DEFINED"
+      }
+    }
+  },
+  "training_performed": false,
+  "training_note": "No training entrypoint is called by the default command (static inspection); this field is not a runtime measurement.",
+  "limits": [
+    "Saved-result verification and rescoring only: no model fitting, E1 refit or E2 decomposition rerun.",
+    "Run on Windows x86-64; other platforms have not been tested.",
+    "Does not reconstruct missing historical training runs, checkpoints or historical environments."
+  ]
+}

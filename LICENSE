@@ -1,0 +1,9 @@
+This repository uses file-level licensing, not a blanket software license.
+
+See FILE_LICENSES.tsv and LICENSING.md for the assignment of every published file.
+Designated original software and associated documentation use the MIT License.
+Benchmark-derived data and scientific artifacts use Creative Commons Attribution
+4.0 International with the retained upstream attribution. Third-party material
+and license texts retain their own terms.
+
+The complete license texts are in LICENSES/.
